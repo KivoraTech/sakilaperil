@@ -1,0 +1,2036 @@
+{
+ "money": [
+  {
+   "loc": "it",
+   "minor": 2500,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "25 €"
+  },
+  {
+   "loc": "it",
+   "minor": 123456789,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "1.234.568 €"
+  },
+  {
+   "loc": "it",
+   "minor": 100000,
+   "cur": "NPR",
+   "fd": 0,
+   "v": "1000 NPR"
+  },
+  {
+   "loc": "it",
+   "minor": 99,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "1 €"
+  },
+  {
+   "loc": "it",
+   "minor": 150,
+   "cur": "EUR",
+   "fd": 2,
+   "v": "1,5 €"
+  },
+  {
+   "loc": "it",
+   "minor": 0,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "0 €"
+  },
+  {
+   "loc": "it",
+   "minor": 2500000,
+   "cur": "USD",
+   "fd": 0,
+   "v": "25.000 USD"
+  },
+  {
+   "loc": "it",
+   "minor": -500,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "-5 €"
+  },
+  {
+   "loc": "it",
+   "minor": 12345,
+   "cur": "EUR",
+   "fd": 2,
+   "v": "123,45 €"
+  },
+  {
+   "loc": "en",
+   "minor": 2500,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "€25"
+  },
+  {
+   "loc": "en",
+   "minor": 123456789,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "€1,234,568"
+  },
+  {
+   "loc": "en",
+   "minor": 100000,
+   "cur": "NPR",
+   "fd": 0,
+   "v": "NPR 1,000"
+  },
+  {
+   "loc": "en",
+   "minor": 99,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "€1"
+  },
+  {
+   "loc": "en",
+   "minor": 150,
+   "cur": "EUR",
+   "fd": 2,
+   "v": "€1.5"
+  },
+  {
+   "loc": "en",
+   "minor": 0,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "€0"
+  },
+  {
+   "loc": "en",
+   "minor": 2500000,
+   "cur": "USD",
+   "fd": 0,
+   "v": "US$25,000"
+  },
+  {
+   "loc": "en",
+   "minor": -500,
+   "cur": "EUR",
+   "fd": 0,
+   "v": "-€5"
+  },
+  {
+   "loc": "en",
+   "minor": 12345,
+   "cur": "EUR",
+   "fd": 2,
+   "v": "€123.45"
+  }
+ ],
+ "number": [
+  {
+   "loc": "it",
+   "n": 0,
+   "v": "0"
+  },
+  {
+   "loc": "it",
+   "n": 7,
+   "v": "7"
+  },
+  {
+   "loc": "it",
+   "n": 1234,
+   "v": "1234"
+  },
+  {
+   "loc": "it",
+   "n": 1234567,
+   "v": "1.234.567"
+  },
+  {
+   "loc": "it",
+   "n": 12.5,
+   "v": "12,5"
+  },
+  {
+   "loc": "it",
+   "n": -42,
+   "v": "-42"
+  },
+  {
+   "loc": "it",
+   "n": 1000,
+   "v": "1000"
+  },
+  {
+   "loc": "en",
+   "n": 0,
+   "v": "0"
+  },
+  {
+   "loc": "en",
+   "n": 7,
+   "v": "7"
+  },
+  {
+   "loc": "en",
+   "n": 1234,
+   "v": "1,234"
+  },
+  {
+   "loc": "en",
+   "n": 1234567,
+   "v": "1,234,567"
+  },
+  {
+   "loc": "en",
+   "n": 12.5,
+   "v": "12.5"
+  },
+  {
+   "loc": "en",
+   "n": -42,
+   "v": "-42"
+  },
+  {
+   "loc": "en",
+   "n": 1000,
+   "v": "1,000"
+  }
+ ],
+ "date": [
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "29 settembre 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "29 settembre 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "29 settembre 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "settembre 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "settembre 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "settembre 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "martedì 29 settembre"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "martedì 29 settembre"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "martedì 29 settembre"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "set"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "set"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "set"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "29"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "29"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "29"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "4 gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "4 gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "3 gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "domenica 4 gennaio"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "domenica 4 gennaio"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "sabato 3 gennaio"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "gen"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "gen"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "gen"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "4"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "4"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "3"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "1 gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "1 gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "31 dicembre 2025"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "gennaio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "dicembre 2025"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2025"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "giovedì 1 gennaio"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "giovedì 1 gennaio"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "mercoledì 31 dicembre"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "gen"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "gen"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "dic"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "1"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "1"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "31"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "15 luglio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "15 luglio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "15 luglio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "luglio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "luglio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "luglio 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "mercoledì 15 luglio"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "mercoledì 15 luglio"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "mercoledì 15 luglio"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "lug"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "lug"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "lug"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "15"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "15"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "15"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "29 marzo 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "29 marzo 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "29 marzo 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "marzo 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "marzo 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "marzo 2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "domenica 29 marzo"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "domenica 29 marzo"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "domenica 29 marzo"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "mar"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "mar"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "mar"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "29"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "29"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "29"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "29 September 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "29 September 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "29 September 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "September 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "September 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "September 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "Tuesday 29 September"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Tuesday 29 September"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "Tuesday 29 September"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "Sept"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Sept"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "Sept"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "29"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "29"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "29"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "4 January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "4 January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "3 January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "Sunday 4 January"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Sunday 4 January"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "Saturday 3 January"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "Jan"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Jan"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "Jan"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "4"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "4"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "3"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "1 January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "1 January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "31 December 2025"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "January 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "December 2025"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2025"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "Thursday 1 January"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Thursday 1 January"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "Wednesday 31 December"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "Jan"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Jan"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "Dec"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "1"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "1"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "31"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "15 July 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "15 July 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "15 July 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "July 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "July 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "July 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "Wednesday 15 July"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Wednesday 15 July"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "Wednesday 15 July"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "Jul"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Jul"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "Jul"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "15"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "15"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "15"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": null,
+   "tz": "Europe/Rome",
+   "v": "29 March 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": null,
+   "tz": "Asia/Kathmandu",
+   "v": "29 March 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": null,
+   "tz": "UTC",
+   "v": "29 March 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "March 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "March 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "long",
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "March 2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "year": "numeric"
+   },
+   "tz": "UTC",
+   "v": "2026"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Europe/Rome",
+   "v": "Sunday 29 March"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Sunday 29 March"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "weekday": "long",
+    "day": "numeric",
+    "month": "long"
+   },
+   "tz": "UTC",
+   "v": "Sunday 29 March"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Europe/Rome",
+   "v": "Mar"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "Mar"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "month": "short"
+   },
+   "tz": "UTC",
+   "v": "Mar"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Europe/Rome",
+   "v": "29"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "Asia/Kathmandu",
+   "v": "29"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "opts": {
+    "day": "numeric"
+   },
+   "tz": "UTC",
+   "v": "29"
+  }
+ ],
+ "time": [
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "tz": "Europe/Rome",
+   "v": "10:05"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "13:50"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-09-29T08:05:00Z",
+   "tz": "UTC",
+   "v": "08:05"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "tz": "Europe/Rome",
+   "v": "00:30"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "05:15"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-01-03T23:30:00Z",
+   "tz": "UTC",
+   "v": "23:30"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "tz": "Europe/Rome",
+   "v": "00:30"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "05:15"
+  },
+  {
+   "loc": "it",
+   "iso": "2025-12-31T23:30:00Z",
+   "tz": "UTC",
+   "v": "23:30"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "tz": "Europe/Rome",
+   "v": "14:00"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "17:45"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-07-15T12:00:00Z",
+   "tz": "UTC",
+   "v": "12:00"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "tz": "Europe/Rome",
+   "v": "03:30"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "07:15"
+  },
+  {
+   "loc": "it",
+   "iso": "2026-03-29T01:30:00Z",
+   "tz": "UTC",
+   "v": "01:30"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "tz": "Europe/Rome",
+   "v": "10:05"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "13:50"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-09-29T08:05:00Z",
+   "tz": "UTC",
+   "v": "08:05"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "tz": "Europe/Rome",
+   "v": "00:30"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "05:15"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-01-03T23:30:00Z",
+   "tz": "UTC",
+   "v": "23:30"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "tz": "Europe/Rome",
+   "v": "00:30"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "05:15"
+  },
+  {
+   "loc": "en",
+   "iso": "2025-12-31T23:30:00Z",
+   "tz": "UTC",
+   "v": "23:30"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "tz": "Europe/Rome",
+   "v": "14:00"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "17:45"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-07-15T12:00:00Z",
+   "tz": "UTC",
+   "v": "12:00"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "tz": "Europe/Rome",
+   "v": "03:30"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "tz": "Asia/Kathmandu",
+   "v": "07:15"
+  },
+  {
+   "loc": "en",
+   "iso": "2026-03-29T01:30:00Z",
+   "tz": "UTC",
+   "v": "01:30"
+  }
+ ]
+}

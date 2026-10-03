@@ -1,0 +1,1223 @@
+/*
+ * Shared by both stylesheets: design tokens, custom variants, base and component layers.
+ * app.css (admin, scans the whole project) and site.css (public site, scans only public templates)
+ * import this file after Tailwind itself.
+ */
+@import "tw-animate-css";
+@import "./vendor/shadcn-tailwind.css";
+@import "./fonts.css";
+
+@custom-variant dark (&:is(.dark *));
+/* `motion:` = decorative motion allowed: site setting on (server `data-motion`) AND no reduced-motion. */
+@custom-variant motion {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-motion] & {
+      @slot;
+    }
+  }
+}
+
+/*
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Brand tokens.
+ * Deviations from tokens.css (to keep the shared admin/shadcn UI unchanged):
+ *  - Tailwind's default palette is NOT reset (admin + preview use it).
+ *  - The semantic border role is `--color-hairline` (shadcn owns `--color-border`).
+ *  - Shadows are `shadow-card|raised|panel|cta`; radii come from `--radius`, which
+ *    `.site` sets to 1.25rem (lg=20px, xl=28px, as in the design).
+ *  - shadcn bridge variables and the two-tone focus ring are scoped to `.site`.
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+@theme {
+  --color-paper: #fbf7f0;
+  --color-cream: #f4ecdd;
+  --color-sand: #ede3d0;
+  --color-white: #ffffff;
+  --color-ink: #1f2328;
+  --color-ink-soft: #5a5f66;
+  --color-line: #e7e0d3;
+  --color-line-strong: #8c8272;
+  --color-himalaya: #1e3a5f;
+  --color-himalaya-600: #2a4a73;
+  --color-deep: #101f33;
+  --color-navy-800: #162b47;
+  --color-sindoor: #b5452f;
+  --color-sindoor-700: #963824;
+  --color-sindoor-dark: #963824;
+  --color-sindoor-50: #fcefea;
+  --color-sindoor-300: #f08c73;
+  --color-marigold: #e09a2b;
+  --color-marigold-700: #8f5a0e;
+  --color-gold: #f6c77a;
+  --color-sage: #6e8b74;
+  --color-sage-700: #4e6b55;
+  --color-sage-50: #f1f6f2;
+  --color-mist: #a8b8cc;
+  --color-mist-200: #c9d5e4;
+  --color-flag-blue: #2f6fb5;
+  --color-flag-white: #f5f2ea;
+  --color-flag-red: #c8372d;
+  --color-flag-green: #3c8d4e;
+  --color-flag-yellow: #f2c230;
+  --color-success: #2f6b3a;
+  --color-success-bg: #eef5ef;
+  --color-error: #a3261b;
+  --color-error-bg: #fbedea;
+  --color-warning: #7a4b08;
+  --color-warning-bg: #fdf3e1;
+  --color-info: #1e3a5f;
+  --color-info-bg: #eaf0f7;
+
+  /* Semantic roles (re-mapped by .surface-dark / .surface-marigold) */
+  --color-bg: var(--color-paper);
+  --color-bg-alt: var(--color-cream);
+  --color-surface: var(--color-white);
+  --color-fg: var(--color-ink);
+  --color-fg-muted: var(--color-ink-soft);
+  --color-heading: var(--color-himalaya);
+  --color-accent-text: var(--color-sindoor);
+  --color-accent-rule: var(--color-marigold);
+  --color-hairline: var(--color-line);
+  --color-border-input: var(--color-line-strong);
+  --color-cta: var(--color-sindoor);
+  --color-cta-hover: var(--color-sindoor-700);
+  --color-cta-fg: var(--color-white);
+  --color-focus: var(--color-himalaya);
+
+  --font-display: var(--font-fraunces), "Fraunces", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-devanagari: "Noto Sans Devanagari", "Kohinoor Devanagari", "Nirmala UI", sans-serif;
+
+  --text-display: clamp(2.75rem, 1.6rem + 5.1vw, 6rem);
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.03em;
+  --text-h1: clamp(2.25rem, 1.6rem + 2.9vw, 4rem);
+  --text-h1--line-height: 1.05;
+  --text-h1--letter-spacing: -0.02em;
+  --text-h2: clamp(1.875rem, 1.45rem + 1.9vw, 3.25rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.015em;
+  --text-h3: clamp(1.375rem, 1.25rem + 0.55vw, 1.75rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.01em;
+  --text-h4: 1.1875rem;
+  --text-h4--line-height: 1.35;
+  --text-statement: clamp(1.5rem, 1.2rem + 1.4vw, 2.5rem);
+  --text-statement--line-height: 1.25;
+  --text-lead: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.65;
+  --text-small: 0.9375rem;
+  --text-small--line-height: 1.5;
+  --text-kicker: 0.8125rem;
+  --text-kicker--line-height: 1.2;
+  --text-kicker--letter-spacing: 0.16em;
+  --text-stat: clamp(2.5rem, 1.9rem + 2.6vw, 4rem);
+  --text-stat--line-height: 1;
+  --text-stat--letter-spacing: -0.02em;
+
+  --spacing-gutter: clamp(1rem, 0.6rem + 1.8vw, 2.5rem);
+  --spacing-section: clamp(4rem, 2.8rem + 5.3vw, 8rem);
+  --spacing-section-sm: clamp(2.5rem, 2rem + 2.2vw, 4rem);
+  --spacing-header: 4.5rem;
+
+  --container-prose: 42rem;
+  --container-content: 64rem;
+  --container-wide: 76rem;
+  --container-bleed: 90rem;
+
+  --shadow-card: 0 1px 2px rgb(16 31 51 / 0.06), 0 4px 12px rgb(16 31 51 / 0.06);
+  --shadow-raised: 0 1px 2px rgb(16 31 51 / 0.06), 0 12px 32px rgb(16 31 51 / 0.1);
+  --shadow-panel: 0 30px 70px -30px rgb(16 31 51 / 0.35);
+  --shadow-cta: 0 10px 24px -10px rgb(181 69 47 / 0.55);
+
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-reveal: reveal 600ms var(--ease-out-soft) both;
+  --animate-hero-in: hero-in 900ms var(--ease-out-soft) both;
+  --animate-fade-in: fade-in 200ms ease-out both;
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes hero-in {
+    from {
+      transform: scale(1.04);
+    }
+    to {
+      transform: none;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-heading: var(--font-fraunces), Georgia, serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #1e3a5f;
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: #e09a2b;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─────────────────────────── Public site ─────────────────────────── */
+.site {
+  --radius: 1.25rem;
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+  --card: var(--color-white);
+  --card-foreground: var(--color-ink);
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-ink);
+  --primary: var(--color-sindoor);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-himalaya);
+  --secondary-foreground: var(--color-white);
+  --muted: var(--color-cream);
+  --muted-foreground: var(--color-ink-soft);
+  --accent: var(--color-cream);
+  --accent-foreground: var(--color-himalaya);
+  --destructive: var(--color-error);
+  --border: var(--color-line);
+  --input: var(--color-line-strong);
+  --ring: var(--color-himalaya);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-size: var(--text-body);
+  line-height: var(--text-body--line-height);
+}
+.site :where(h1, h2, h3) {
+  text-wrap: balance;
+}
+.site :where(p, li, dd) {
+  text-wrap: pretty;
+}
+.site :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0 6px rgb(224 154 43 / 0.35);
+}
+.site [lang="ne"] {
+  font-family: var(--font-devanagari);
+}
+html:has(.site) {
+  scroll-padding-top: 5.5rem;
+}
+
+.surface-dark {
+  --color-bg: var(--color-deep);
+  --color-bg-alt: var(--color-navy-800);
+  --color-surface: var(--color-navy-800);
+  --color-fg: #dce4ee;
+  --color-fg-muted: var(--color-mist);
+  --color-heading: var(--color-white);
+  --color-accent-text: var(--color-gold);
+  --color-accent-rule: var(--color-marigold);
+  --color-hairline: rgb(255 255 255 / 0.12);
+  --color-border-input: rgb(255 255 255 / 0.45);
+  --color-focus: var(--color-gold);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+.surface-dark.surface-himalaya {
+  --color-bg: var(--color-himalaya);
+  --color-surface: var(--color-himalaya-600);
+  --color-bg-alt: var(--color-himalaya-600);
+  --color-fg: var(--color-white);
+  --color-fg-muted: var(--color-mist-200);
+  --color-accent-text: var(--color-gold);
+}
+.surface-marigold {
+  --color-bg: var(--color-marigold);
+  --color-fg: var(--color-deep);
+  --color-fg-muted: var(--color-deep);
+  --color-heading: var(--color-deep);
+  --color-accent-text: var(--color-deep);
+  --color-focus: var(--color-deep);
+  --color-hairline: rgb(16 31 51 / 0.2);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+.surface-cream {
+  --color-bg: var(--color-cream);
+  --color-bg-alt: var(--color-sand);
+  background-color: var(--color-bg);
+}
+.surface-white {
+  --color-bg: var(--color-white);
+  --color-bg-alt: var(--color-paper);
+  background-color: var(--color-bg);
+}
+
+/* Heading accent phrase: italic, light, accent colour (design §3.3). */
+.heading-accent {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-accent-text);
+}
+
+/* Kicker: 13px uppercase with a marigold dash. */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--text-kicker);
+  line-height: var(--text-kicker--line-height);
+  letter-spacing: var(--text-kicker--letter-spacing);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-accent-text);
+}
+.kicker::before {
+  content: "";
+  width: 1.5rem;
+  height: 2px;
+  flex: none;
+  background: var(--color-accent-rule);
+}
+.surface-marigold .kicker::before {
+  background: var(--color-deep);
+}
+
+/* Prayer-flag strip (decorative). */
+.prayer-flags {
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--color-flag-blue) 0 20%,
+    var(--color-flag-white) 20% 40%,
+    var(--color-flag-red) 40% 60%,
+    var(--color-flag-green) 60% 80%,
+    var(--color-flag-yellow) 80% 100%
+  );
+}
+
+/* Stretched-link cards: the title link covers the whole card. */
+.stretched-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+/* Progress bar fill */
+.progress-fill {
+  transform-origin: left center;
+  transition: transform 1200ms var(--ease-out-soft);
+}
+
+/* Journey timeline line that "draws itself" (scroll-driven, progressive enhancement). */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .timeline-line-fill {
+      transform-origin: top center;
+      animation: timeline-draw linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 60%;
+    }
+  }
+}
+@keyframes timeline-draw {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* Masonry gallery */
+.masonry {
+  column-gap: 0.75rem;
+  columns: 2;
+}
+@media (min-width: 48rem) {
+  .masonry {
+    columns: 3;
+  }
+}
+@media (min-width: 80rem) {
+  .masonry.masonry-4 {
+    columns: 4;
+  }
+}
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+}
+
+dialog.lightbox::backdrop,
+dialog.menu-sheet::backdrop {
+  background: rgb(16 31 51 / 0.85);
+}
+
+/* View transitions: keep them short, none under reduced motion. */
+::view-transition-group(*) {
+  animation-duration: 300ms;
+  animation-timing-function: var(--ease-out-soft);
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* Horizontal rails: native scroll with snap, no visible scrollbar clutter. */
+.rail {
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  overscroll-behavior-x: contain;
+}
+.rail > * {
+  scroll-snap-align: start;
+}
+
+.js-reveal [data-reveal]:not(.is-visible) .progress-fill {
+  transform: scaleX(0) !important;
+}
+
+/* ─────────── Site header: solid by default, transparent over a dark hero until scrolled ─────────── */
+.site-header {
+  --lang-bg: var(--color-white);
+  --lang-ring: var(--color-line);
+  --lang-fg: var(--color-himalaya);
+  --lang-hover: var(--color-cream);
+  background-color: rgb(251 247 240 / 0.92);
+  border-bottom: 1px solid var(--color-line);
+  transition:
+    background-color 250ms var(--ease-out-soft),
+    border-color 250ms var(--ease-out-soft);
+}
+@supports (backdrop-filter: blur(1px)) {
+  .site-header {
+    background-color: rgb(251 247 240 / 0.82);
+    backdrop-filter: saturate(1.4) blur(14px);
+  }
+}
+.site:has([data-header-overlay]) .site-header:not([data-scrolled]) {
+  --color-heading: var(--color-white);
+  --color-fg: var(--color-white);
+  --color-fg-muted: var(--color-mist-200);
+  --color-focus: var(--color-gold);
+  --lang-bg: rgb(255 255 255 / 0.12);
+  --lang-ring: rgb(255 255 255 / 0.3);
+  --lang-fg: var(--color-white);
+  --lang-hover: rgb(255 255 255 / 0.14);
+  background-color: transparent;
+  border-color: transparent;
+  backdrop-filter: none;
+}
+.site-header .wordmark-name {
+  color: var(--color-heading);
+}
+.site-header .wordmark-sub {
+  color: var(--color-fg-muted);
+}
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0 0.8rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.975rem;
+  color: var(--color-heading);
+  transition: background-color 150ms;
+}
+.nav-link:hover {
+  background-color: color-mix(in srgb, var(--color-heading) 8%, transparent);
+}
+.nav-link[data-active]::after {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  right: 0.8rem;
+  bottom: 0.35rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-marigold);
+}
+/* In a layer so responsive utilities (`xl:hidden` on the menu button) can override `display`. */
+@layer components {
+  .header-icon-btn {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    color: var(--color-heading);
+  }
+}
+.header-icon-btn:hover {
+  background-color: color-mix(in srgb, var(--color-heading) 10%, transparent);
+}
+dialog.menu-sheet[open] {
+  display: block;
+}
+
+/* Article / page prose (no typography plugin: explicit, token-based). */
+.prose-site {
+  color: var(--color-fg);
+  font-size: var(--text-body);
+  line-height: 1.7;
+}
+.prose-site > * + * {
+  margin-top: 1.25em;
+}
+.prose-site h2,
+.prose-site h3 {
+  font-family: var(--font-display);
+  color: var(--color-heading);
+  font-weight: 600;
+  margin-top: 2em;
+  text-wrap: balance;
+}
+.prose-site h2 {
+  font-size: clamp(1.625rem, 1.3rem + 1.2vw, 2.25rem);
+  line-height: 1.15;
+}
+.prose-site h3 {
+  font-size: var(--text-h3);
+  line-height: 1.2;
+}
+.prose-site h4 {
+  font-size: var(--text-h4);
+  font-weight: 600;
+  color: var(--color-heading);
+  margin-top: 1.75em;
+}
+.prose-site :where(h2, h3, h4) + * {
+  margin-top: 0.75em;
+}
+.prose-site a {
+  color: var(--color-accent-text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.prose-site a:hover {
+  text-decoration-thickness: 2px;
+}
+.prose-site ul,
+.prose-site ol {
+  padding-left: 1.4em;
+}
+.prose-site ul {
+  list-style: disc;
+}
+.prose-site ol {
+  list-style: decimal;
+}
+.prose-site li + li {
+  margin-top: 0.4em;
+}
+.prose-site li::marker {
+  color: var(--color-marigold-700);
+}
+.prose-site blockquote {
+  border-left: 3px solid var(--color-marigold);
+  padding: 0.25em 0 0.25em 1.25em;
+  font-family: var(--font-display);
+  font-size: var(--text-statement);
+  line-height: 1.3;
+  color: var(--color-heading);
+}
+.prose-site hr {
+  border: 0;
+  height: 1px;
+  background: var(--color-line);
+  margin: 2.5em 0;
+}
+.prose-site > p:first-child.lead-p {
+  font-size: var(--text-lead);
+}
+dialog.lightbox[open] {
+  display: block;
+}
+dialog.lightbox::backdrop {
+  background: rgb(10 20 34 / 0.94);
+}
+
+/* ═══════════════════════════ Production motion (design §7, 2026-09-29) ═══════════════════════════
+ * Rules: the server HTML is the final state; transform / opacity / clip-path only; everything is
+ * gated by `[data-motion]` (site setting) + `prefers-reduced-motion: no-preference`; hidden
+ * "before" states exist only under `.js-reveal` (added by MotionController), so no-JS visitors,
+ * crawlers and screen readers always get the full content. Loops run only while `[data-playing]`.
+ */
+/* Side-sliding reveals and the 104%-wide flag garland must never cause sideways scrolling.
+ * `clip` (not `hidden`) keeps the sticky header working. */
+.site {
+  overflow-x: clip;
+}
+:root {
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ── Reveal once (MotionController adds .is-visible) ───────────────────────────── */
+.js-reveal [data-reveal] {
+  transition:
+    opacity 700ms var(--ease-out-soft),
+    transform 900ms var(--ease-out-soft),
+    clip-path 1300ms var(--ease-in-out-soft);
+  transition-delay: calc(var(--reveal-i, 0) * 90ms);
+}
+.js-reveal [data-reveal]:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(32px);
+}
+.js-reveal [data-reveal="slide-left"]:not(.is-visible) {
+  transform: translateX(-48px);
+}
+.js-reveal [data-reveal="slide-right"]:not(.is-visible) {
+  transform: translateX(48px);
+}
+.js-reveal [data-reveal="pop"]:not(.is-visible) {
+  transform: scale(0.92);
+}
+/* Clip-path wipes: the box stays in place (no layout shift), the picture is uncovered. */
+.js-reveal [data-reveal^="wipe"]:not(.is-visible) {
+  opacity: 1;
+  transform: none;
+}
+.js-reveal [data-reveal="wipe-up"]:not(.is-visible) {
+  clip-path: inset(100% 0 0 0 round var(--radius-lg, 1rem));
+}
+.js-reveal [data-reveal="wipe-left"]:not(.is-visible) {
+  clip-path: inset(0 0 0 100% round var(--radius-lg, 1rem));
+}
+.js-reveal [data-reveal="wipe-right"]:not(.is-visible) {
+  clip-path: inset(0 100% 0 0 round var(--radius-lg, 1rem));
+}
+/* Visible state reaches past the box so shadows/rings are never clipped. */
+.js-reveal [data-reveal^="wipe"] {
+  clip-path: inset(-4rem round var(--radius-lg, 1rem));
+}
+/* Round badge: spins into place. */
+.js-reveal [data-reveal="stamp"] {
+  transition:
+    opacity 400ms var(--ease-out-soft) 700ms,
+    transform 1300ms var(--ease-back) 700ms;
+}
+.js-reveal [data-reveal="stamp"]:not(.is-visible) {
+  transform: scale(0) rotate(-120deg);
+}
+.js-reveal [data-reveal^="wipe"] img {
+  transition: transform 1600ms var(--ease-out-soft);
+  transition-delay: inherit;
+}
+.js-reveal [data-reveal^="wipe"]:not(.is-visible) img {
+  transform: scale(1.18);
+}
+/* Children that follow their revealed parent. */
+.js-reveal [data-reveal] .reveal-pop {
+  transition: transform 700ms var(--ease-back) 250ms;
+}
+.js-reveal [data-reveal]:not(.is-visible) .reveal-pop {
+  transform: scale(0);
+}
+.js-reveal [data-reveal] .reveal-rise {
+  transition:
+    opacity 700ms var(--ease-out-soft) 150ms,
+    transform 900ms var(--ease-out-soft) 150ms;
+}
+.js-reveal [data-reveal]:not(.is-visible) .reveal-rise {
+  opacity: 0;
+  transform: translateY(24px);
+}
+/* Ridge line draws itself once, left to right (clip, so the stroke width never changes). */
+.js-reveal [data-reveal="draw"] {
+  clip-path: inset(-2px -2px -2px -2px);
+  transition: clip-path 2200ms var(--ease-in-out-soft);
+}
+.js-reveal [data-reveal="draw"]:not(.is-visible) {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(-2px 100% -2px -2px);
+}
+
+/* Statement paragraph: words light up one by one. IO fallback first… */
+.js-reveal [data-statement] .stmt-w {
+  transition: opacity 500ms var(--ease-out-soft);
+  transition-delay: calc(var(--wi, 0) * 28ms);
+}
+.js-reveal [data-statement]:not(.is-visible) .stmt-w {
+  opacity: 0.15;
+}
+/* …scroll-linked where the browser supports scroll-driven animations (off the main thread). */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-motion] [data-statement] {
+      view-timeline: --statement block;
+    }
+    .js-reveal [data-motion] [data-statement] .stmt-w {
+      animation: stmt-light linear both;
+      animation-timeline: --statement;
+      animation-range: cover calc(12% + var(--wp, 0) * 34%) cover calc(20% + var(--wp, 0) * 34%);
+    }
+  }
+}
+@keyframes stmt-light {
+  from {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── Hero entrance (CSS-only: plays at first paint, ends in the server-rendered state).
+ * Entrances use fill-mode `backwards` so hover transforms work once they finish. ── */
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] .hero-zoom {
+    animation: hero-zoom 2400ms var(--ease-out-soft) backwards;
+  }
+  [data-motion] .hero-rise {
+    animation: hero-rise 1100ms var(--ease-out-soft) backwards;
+    animation-delay: var(--d, 0ms);
+  }
+  [data-motion] .hero-side {
+    animation: hero-side 1200ms var(--ease-out-soft) backwards;
+    animation-delay: var(--d, 1100ms);
+  }
+  [data-motion] .word-mask > span {
+    animation: word-rise 1300ms var(--ease-out-soft) backwards;
+    animation-delay: calc(350ms + var(--wi, 0) * 60ms);
+  }
+}
+/* Line mask for split headings: descenders/italics keep room, nothing reflows. */
+.word-mask {
+  display: inline-block;
+  overflow: clip;
+  vertical-align: bottom;
+  padding: 0.06em 0.08em 0.14em 0;
+  margin: -0.06em -0.08em -0.14em 0;
+}
+.word-mask > span {
+  display: inline-block;
+}
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes hero-side {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes word-rise {
+  from {
+    transform: translateY(115%) rotate(4deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Hero parallax + content fade as it scrolls away. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-motion] [data-hero-scroll] {
+      view-timeline: --hero block;
+    }
+    [data-motion] [data-hero-scroll] .hero-parallax {
+      animation: hero-parallax linear both;
+      animation-timeline: --hero;
+      animation-range: exit 0% exit 100%;
+    }
+    [data-motion] [data-hero-scroll] .hero-fade {
+      animation: hero-fade linear both;
+      animation-timeline: --hero;
+      animation-range: exit 25% exit 85%;
+    }
+  }
+}
+@keyframes hero-parallax {
+  to {
+    transform: translate3d(0, 18%, 0);
+  }
+}
+@keyframes hero-fade {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+  }
+}
+.js-scroll-fallback [data-hero-scroll] .hero-parallax {
+  transform: translate3d(0, calc(var(--progress, 0) * 18%), 0);
+}
+.js-scroll-fallback [data-hero-scroll] .hero-fade {
+  opacity: calc(1 - max(0, var(--progress, 0) - 0.25) / 0.6);
+  transform: translate3d(0, calc(max(0, var(--progress, 0) - 0.25) / 0.6 * -10%), 0);
+}
+
+/* Scroll cue: a gold line that drips a few times, then rests. */
+.scroll-cue-line {
+  transform-origin: top;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] [data-playing] .scroll-cue-line {
+    animation: cue 2200ms var(--ease-out-soft) 1600ms 4 both;
+  }
+}
+@keyframes cue {
+  0% {
+    transform: scaleY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 0.25;
+  }
+}
+
+/* ── Image parallax: image oversized only while motion is on (no crop change otherwise) ── */
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] [data-parallax] {
+    position: absolute;
+    /* Oversize so a ±speed% drift of the (taller) layer never uncovers an edge: s / (1 - 2s). */
+    inset: calc(var(--speed, 8) / (100 - 2 * var(--speed, 8)) * -100%) 0;
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-motion] [data-parallax] {
+      animation: parallax linear both;
+      animation-timeline: view();
+      animation-range: cover;
+    }
+  }
+}
+@keyframes parallax {
+  from {
+    transform: translate3d(0, calc(var(--speed, 8) * -1%), 0);
+  }
+  to {
+    transform: translate3d(0, calc(var(--speed, 8) * 1%), 0);
+  }
+}
+.js-scroll-fallback [data-motion] [data-parallax] {
+  transform: translate3d(0, calc((var(--progress, 0.5) * 2 - 1) * var(--speed, 8) * 1%), 0);
+}
+
+/* ── Prayer-flag garland: one short flutter when it comes on screen, then it rests ───
+   (WCAG 2.2.2: nothing keeps moving for more than five seconds without a pause control). */
+.flag {
+  transform-box: fill-box;
+  transform-origin: 50% 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] .flag-garland {
+    animation: garland-drop 1600ms var(--ease-out-soft) 500ms backwards;
+  }
+  [data-motion] .flag {
+    animation: flutter var(--dur, 3.2s) ease-in-out var(--delay, 0s) 1 forwards;
+    animation-play-state: paused;
+  }
+  [data-motion] [data-playing] .flag {
+    animation-play-state: running;
+  }
+}
+@keyframes flutter {
+  0%,
+  100% {
+    transform: rotate(-4deg) skewX(-3deg);
+  }
+  50% {
+    transform: rotate(5deg) skewX(4deg);
+  }
+}
+@keyframes garland-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── Marquee strip (WCAG 2.2.2: pausable, paused off-screen / on hover / on focus) ──
+ * Without motion it is a static, wrapped row of words (duplicates hidden). */
+.marquee-track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.marquee-copy {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.marquee-copy[aria-hidden="true"],
+.marquee-pause {
+  display: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] .marquee-track {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: max-content;
+    animation: marquee var(--marquee-duration, 40s) linear infinite;
+    animation-play-state: paused;
+  }
+  [data-motion] .marquee-copy {
+    flex-wrap: nowrap;
+  }
+  [data-motion] .marquee-copy[aria-hidden="true"] {
+    display: flex;
+  }
+  [data-motion] [data-playing] .marquee-track {
+    animation-play-state: running;
+  }
+  [data-motion] .marquee:hover .marquee-track,
+  [data-motion] .marquee:focus-within .marquee-track,
+  [data-motion] .marquee[data-paused] .marquee-track {
+    animation-play-state: paused;
+  }
+  [data-motion] .marquee-pause {
+    display: inline-flex;
+  }
+}
+/* The track holds N identical copies; moving by one copy loops seamlessly. */
+/* Outlined italic word (demo). Falls back to filled text where text-stroke is unsupported. */
+@supports (-webkit-text-stroke: 1px black) {
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px currentColor;
+  }
+  .surface-dark .text-outline {
+    -webkit-text-stroke-color: color-mix(in srgb, var(--color-gold) 85%, transparent);
+  }
+}
+@keyframes marquee {
+  to {
+    transform: translate3d(calc(-100% / var(--copies, 2)), 0, 0);
+  }
+}
+
+/* ── Header: hides on scroll down, returns on scroll up; nav entrance; underline sweep ── */
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] .site-header {
+    transition:
+      background-color 250ms var(--ease-out-soft),
+      border-color 250ms var(--ease-out-soft),
+      transform 450ms var(--ease-out-soft);
+  }
+  [data-motion] .nav-in {
+    animation: nav-in 700ms var(--ease-out-soft) backwards;
+    animation-delay: calc(120ms + var(--i, 0) * 60ms);
+  }
+  [data-motion] .nav-link:not([data-active])::before {
+    transition: transform 400ms var(--ease-out-soft);
+  }
+  [data-motion] dialog.menu-sheet[open] {
+    animation: sheet-in 280ms var(--ease-out-soft) backwards;
+  }
+}
+.site-header[data-hidden] {
+  transform: translateY(-100%);
+}
+.nav-link:not([data-active])::before {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  right: 0.8rem;
+  bottom: 0.35rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-marigold);
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.nav-link:not([data-active]):hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+@keyframes nav-in {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sheet-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* ── Buttons: colour fill slides up from the bottom (design §8.4) ───────────────── */
+.btn-fill {
+  isolation: isolate;
+}
+.btn-fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--btn-fill);
+  transform: translateY(101%);
+}
+.btn-fill:hover::before,
+.btn-fill:focus-visible::before {
+  transform: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] .btn-fill::before {
+    transition: transform 400ms var(--ease-out-soft);
+  }
+}
+
+/* ── Text links: underline grows from the left ─────────────────────────────────── */
+.link-sweep {
+  background-image: linear-gradient(var(--color-marigold), var(--color-marigold));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  padding-bottom: 2px;
+}
+.group:hover .link-sweep,
+.link-sweep:hover,
+.link-sweep:focus-visible {
+  background-size: 100% 2px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] .link-sweep {
+    transition: background-size 450ms var(--ease-out-soft);
+  }
+}
+
+/* Card "read" badge pops in on hover. */
+.card-badge {
+  transform: scale(0) rotate(-45deg);
+}
+.group:hover .card-badge,
+.group:focus-within .card-badge {
+  transform: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion] .card-badge {
+    transition: transform 450ms var(--ease-back);
+  }
+}
+
+/* ── Print: every section visible, no sticky chrome, no forms or decoration ─────────── */
+@media print {
+  html.js-reveal [data-reveal],
+  html.js-reveal [data-reveal] *,
+  [data-reveal],
+  [data-reveal] * {
+    opacity: 1 !important;
+    clip-path: none !important;
+    transform: none !important;
+    translate: none !important;
+    animation: none !important;
+    transition: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+  .site-header {
+    position: static !important;
+    transform: none !important;
+    translate: none !important;
+  }
+  .site-header nav,
+  .site-header [data-menu-open],
+  .site-header dialog,
+  [data-sticky-donate],
+  #newsletter-footer,
+  .flag-garland,
+  .prayer-flags,
+  form,
+  dialog,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    word-break: break-all;
+  }
+}

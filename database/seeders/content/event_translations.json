@@ -1,0 +1,118 @@
+[
+    {
+        "id": "cmurzqe7a0019nn1mx40ftfef",
+        "eventId": "cmurzqe7a0018nn1mvp6fwdgb",
+        "locale": "it",
+        "title": "Cena solidale per il Nepal",
+        "slug": "cena-solidale-per-il-nepal",
+        "summary": "Una serata insieme per sostenere le borse di studio.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Una serata insieme per sostenere le borse di studio."
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "locationName": "[[TODO: luogo]]",
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.966",
+        "updatedAt": "2026-10-03 06:08:04.966"
+    },
+    {
+        "id": "cmurzqe7a001ann1mg6hb1u4f",
+        "eventId": "cmurzqe7a0018nn1mvp6fwdgb",
+        "locale": "en",
+        "title": "Charity dinner for Nepal",
+        "slug": "charity-dinner-for-nepal",
+        "summary": "An evening together to support scholarships.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "An evening together to support scholarships."
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "locationName": "[[TODO: venue]]",
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.966",
+        "updatedAt": "2026-10-03 06:08:04.966"
+    },
+    {
+        "id": "cmurzqe7c001cnn1mv70cxep3",
+        "eventId": "cmurzqe7c001bnn1m5ob9uk2q",
+        "locale": "it",
+        "title": "Racconti dal Nepal: serata di incontro",
+        "slug": "racconti-dal-nepal",
+        "summary": "Foto e storie dai progetti, con i volontari appena rientrati.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Foto e storie dai progetti, con i volontari appena rientrati."
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "locationName": "[[TODO: luogo]]",
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.968",
+        "updatedAt": "2026-10-03 06:08:04.968"
+    },
+    {
+        "id": "cmurzqe7c001dnn1mhrqjnlm1",
+        "eventId": "cmurzqe7c001bnn1m5ob9uk2q",
+        "locale": "en",
+        "title": "Stories from Nepal: meet-up evening",
+        "slug": "stories-from-nepal",
+        "summary": "Photos and stories from the projects, with volunteers just back.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Photos and stories from the projects, with volunteers just back."
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "locationName": "[[TODO: venue]]",
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.968",
+        "updatedAt": "2026-10-03 06:08:04.968"
+    }
+]

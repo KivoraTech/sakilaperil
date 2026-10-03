@@ -1,0 +1,3 @@
+{{-- components/site/ui/chip.tsx. Params: $tone, $class, $dot, $slot (HtmlString|string). --}}
+@php($chipTones = ['default' => 'bg-cream text-himalaya', 'white' => 'bg-white text-himalaya shadow-card', 'sage' => 'bg-sage-50 text-sage-700', 'warning' => 'bg-warning-bg text-warning', 'sindoor' => 'bg-sindoor-50 text-sindoor-700', 'dark' => 'bg-white/10 text-white'])
+<span class="{{ \App\View\Html::cx('inline-flex items-center gap-1.5 rounded-[6px] px-2.5 py-1 text-[0.8125rem] leading-tight font-semibold', $chipTones[$tone ?? 'default'], $class ?? null) }}">@if (! empty($dot))<span aria-hidden="true" class="{{ \App\View\Html::cx('size-2 rounded-full', $dot) }}"></span>@endif{{ $slot }}</span>

@@ -1,0 +1,30 @@
+[
+    {
+        "id": "cmurzqe71000rnn1mkqkoqvun",
+        "categoryId": "cmurzqe71000qnn1mj17jcwbr",
+        "locale": "it",
+        "name": "Notizie",
+        "slug": "notizie"
+    },
+    {
+        "id": "cmurzqe71000snn1m3m3ccddo",
+        "categoryId": "cmurzqe71000qnn1mj17jcwbr",
+        "locale": "en",
+        "name": "News",
+        "slug": "news"
+    },
+    {
+        "id": "cmurzqe73000unn1msp2757d9",
+        "categoryId": "cmurzqe72000tnn1m2q2pvx08",
+        "locale": "it",
+        "name": "Storie",
+        "slug": "storie"
+    },
+    {
+        "id": "cmurzqe73000vnn1mpckrisdw",
+        "categoryId": "cmurzqe72000tnn1m2q2pvx08",
+        "locale": "en",
+        "name": "Stories",
+        "slug": "stories"
+    }
+]

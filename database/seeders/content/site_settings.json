@@ -1,0 +1,202 @@
+[
+    {
+        "id": "default",
+        "orgName": "Sakila per il Nepal",
+        "organization": {
+            "__json": {
+                "legalName": "[[TODO: legal name of the association]]",
+                "taxCode": "[[TODO: codice fiscale]]",
+                "registrationNumber": "[[TODO: registration number (RUNTS / Nepal SWC)]]",
+                "registeredOffice": "[[TODO: registered office address]]"
+            }
+        },
+        "contact": {
+            "__json": {
+                "email": "[[TODO: contact email]]",
+                "phone": "[[TODO: phone number]]",
+                "address": {
+                    "it": "[[TODO: indirizzo]]",
+                    "en": "[[TODO: address]]"
+                }
+            }
+        },
+        "socialLinks": {
+            "__json": []
+        },
+        "bankDetails": {
+            "__json": {
+                "accountHolder": "[[TODO: account holder]]",
+                "iban": "[[TODO: IBAN]]",
+                "bic": "[[TODO: BIC]]",
+                "reference": {
+                    "it": "Donazione liberale",
+                    "en": "Donation"
+                }
+            }
+        },
+        "nepalPayments": {
+            "__json": {
+                "esewa": {},
+                "khalti": {}
+            }
+        },
+        "donation": {
+            "__json": {
+                "currency": "EUR",
+                "presetAmounts": [
+                    10,
+                    25,
+                    50,
+                    100
+                ],
+                "defaultAmount": 25,
+                "impactNotes": [
+                    {
+                        "amount": 10,
+                        "text": {
+                            "it": "€10 = quaderni, penne e uno zaino per un bambino per un anno.",
+                            "en": "€10 = notebooks, pens and a school bag for one child for a year."
+                        }
+                    },
+                    {
+                        "amount": 25,
+                        "text": {
+                            "it": "€25 = una visita medica e un kit igienico per mamma e bambino.",
+                            "en": "€25 = a medical check-up and a hygiene kit for mother and baby."
+                        }
+                    },
+                    {
+                        "amount": 50,
+                        "text": {
+                            "it": "€50 = materiali per rinforzare un tetto prima dei monsoni.",
+                            "en": "€50 = materials to strengthen a roof before the monsoon."
+                        }
+                    },
+                    {
+                        "amount": 100,
+                        "text": {
+                            "it": "€100 = un mese di lezioni per un'intera classe.",
+                            "en": "€100 = a month of lessons for a whole class."
+                        }
+                    }
+                ]
+            }
+        },
+        "impactStats": {
+            "__json": [
+                {
+                    "key": "families",
+                    "value": 320,
+                    "suffix": "+",
+                    "label": {
+                        "it": "famiglie sostenute",
+                        "en": "families supported"
+                    },
+                    "progress": 0.82
+                },
+                {
+                    "key": "projects",
+                    "value": 12,
+                    "label": {
+                        "it": "progetti attivi in 5 distretti",
+                        "en": "active projects in 5 districts"
+                    },
+                    "progress": 0.6
+                },
+                {
+                    "key": "children",
+                    "value": 85,
+                    "suffix": "+",
+                    "label": {
+                        "it": "bambini tornati a scuola",
+                        "en": "children back in school"
+                    },
+                    "progress": 0.7
+                },
+                {
+                    "key": "funds",
+                    "value": 94,
+                    "suffix": "%",
+                    "label": {
+                        "it": "dei fondi va direttamente ai progetti",
+                        "en": "of funds go straight to projects"
+                    },
+                    "progress": 0.94
+                }
+            ]
+        },
+        "seo": {
+            "__json": {
+                "titleTemplate": {
+                    "it": "%s · Sakila per il Nepal",
+                    "en": "%s · Sakila per il Nepal"
+                },
+                "defaultTitle": {
+                    "it": "Sakila per il Nepal — Insieme, apriamo porte",
+                    "en": "Sakila per il Nepal — Together, we open doors"
+                },
+                "defaultDescription": {
+                    "it": "Sakila per il Nepal: istruzione, salute e case sicure per le famiglie del Nepal.",
+                    "en": "Sakila per il Nepal: education, health and safe homes for families in Nepal."
+                },
+                "ogImageId": "cmurzqe6e0000nn1mwomnkl8m"
+            }
+        },
+        "appearance": {
+            "__json": {
+                "headerStyle": "transparent-on-hero",
+                "enableMotion": true,
+                "accent": "sindoor"
+            }
+        },
+        "analytics": {
+            "__json": {}
+        },
+        "formMessages": {
+            "__json": {
+                "contact": {
+                    "success": {
+                        "it": "Grazie! Ti risponderemo al più presto.",
+                        "en": "Thank you! We will get back to you soon."
+                    }
+                },
+                "volunteer": {
+                    "success": {
+                        "it": "Grazie per la tua disponibilità! Ti contatteremo presto.",
+                        "en": "Thank you for volunteering! We will contact you soon."
+                    }
+                },
+                "membership": {
+                    "success": {
+                        "it": "Grazie! Abbiamo ricevuto la tua richiesta di adesione.",
+                        "en": "Thank you! We received your membership request."
+                    }
+                },
+                "partner": {
+                    "success": {
+                        "it": "Grazie! Ti contatteremo per parlarne insieme.",
+                        "en": "Thank you! We will contact you to talk it through."
+                    }
+                },
+                "newsletter": {
+                    "success": {
+                        "it": "Grazie! Controlla la tua email per confermare l'iscrizione.",
+                        "en": "Thank you! Check your email to confirm your subscription."
+                    }
+                }
+            }
+        },
+        "features": {
+            "__json": {
+                "demoContent": true,
+                "fiveXMille": {
+                    "enabled": true,
+                    "taxCode": "[[TODO: codice fiscale]]"
+                }
+            }
+        },
+        "updatedById": null,
+        "updatedAt": "2026-10-03 06:08:04.950",
+        "createdAt": "2026-10-03 06:08:04.950"
+    }
+]

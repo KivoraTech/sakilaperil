@@ -1,0 +1,75 @@
+name: Release package
+
+# Tag vX.Y.Z → the cPanel upload package (zip + deploy script + SQL file) attached to a GitHub release.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version label for the package (e.g. 1.0.1)
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    services:
+      mariadb:
+        image: mariadb:10.6
+        env:
+          MARIADB_ROOT_PASSWORD: root
+        ports: ["3306:3306"]
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=5s --health-timeout=5s --health-retries=20
+    env:
+      DB_CONNECTION: mysql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      DB_USERNAME: root
+      DB_PASSWORD: root
+      MYSQL_HOST: 127.0.0.1
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      REQUIRE_PHP82: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2" # the package is checked against the oldest PHP the hosting may run
+          extensions: pdo_mysql, mbstring, gd, intl, zip, exif, bcmath
+          coverage: none
+          tools: composer
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: composer install --no-interaction --prefer-dist --no-progress
+      - run: npm ci --no-audit --no-fund
+      - run: cp .env.example .env && php artisan key:generate
+      - name: Version
+        id: v
+        run: echo "version=${INPUT_VERSION:-${GITHUB_REF_NAME#v}}" >> "$GITHUB_OUTPUT"
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+      - name: Build and test the package (first install, update, rollback against MariaDB)
+        run: PHP82="$(command -v php)" PACKAGE_VERSION="${{ steps.v.outputs.version }}" bash tests/deploy/run.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sakila-cpanel-${{ steps.v.outputs.version }}
+          path: |
+            dist/sakila-cpanel-*.zip
+            dist/sakila-database.sql
+            dist/sakila-deploy.sh
+      - name: Attach to the release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/sakila-cpanel-*.zip
+            dist/sakila-database.sql
+            dist/sakila-deploy.sh

@@ -1,0 +1,236 @@
+[
+    {
+        "id": "cmurzqe6x000inn1mhg6h8m5a",
+        "projectId": "cmurzqe6x000hnn1mxqhuiqii",
+        "locale": "it",
+        "title": "Una scuola per il villaggio",
+        "slug": "una-scuola-per-il-villaggio",
+        "sector": "Istruzione",
+        "metaLine": "86 studenti · dal 2024",
+        "summary": "Aule antisismiche, una biblioteca e borse di studio per le bambine che rischiano di abbandonare la scuola.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Aule antisismiche, una biblioteca e borse di studio per le bambine che rischiano di abbandonare la scuola."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "[[TODO: descrizione completa del progetto, obiettivi e risultati]]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.953",
+        "updatedAt": "2026-10-03 06:08:04.953"
+    },
+    {
+        "id": "cmurzqe6x000jnn1mhey1b43w",
+        "projectId": "cmurzqe6x000hnn1mxqhuiqii",
+        "locale": "en",
+        "title": "A school for the village",
+        "slug": "a-school-for-the-village",
+        "sector": "Education",
+        "metaLine": "86 students · since 2024",
+        "summary": "Earthquake-safe classrooms, a library and scholarships for girls at risk of dropping out.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Earthquake-safe classrooms, a library and scholarships for girls at risk of dropping out."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "[[TODO: full project description, goals and results]]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.953",
+        "updatedAt": "2026-10-03 06:08:04.953"
+    },
+    {
+        "id": "cmurzqe6z000lnn1ml97cp4d3",
+        "projectId": "cmurzqe6z000knn1m47h3cf6i",
+        "locale": "it",
+        "title": "Cure per mamme e bambini",
+        "slug": "cure-per-mamme-e-bambini",
+        "sector": "Salute",
+        "metaLine": "1.200 visite · 2025–26",
+        "summary": "Vaccinazioni, visite prenatali e kit igienici portati nei villaggi più lontani dai presidi sanitari.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Vaccinazioni, visite prenatali e kit igienici portati nei villaggi più lontani dai presidi sanitari."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "[[TODO: descrizione completa del progetto, obiettivi e risultati]]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.955",
+        "updatedAt": "2026-10-03 06:08:04.955"
+    },
+    {
+        "id": "cmurzqe6z000mnn1mgcauqcnk",
+        "projectId": "cmurzqe6z000knn1m47h3cf6i",
+        "locale": "en",
+        "title": "Care for mothers and children",
+        "slug": "care-for-mothers-and-children",
+        "sector": "Health",
+        "metaLine": "1,200 check-ups · 2025–26",
+        "summary": "Vaccines, prenatal check-ups and hygiene kits brought to villages far from any clinic.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Vaccines, prenatal check-ups and hygiene kits brought to villages far from any clinic."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "[[TODO: full project description, goals and results]]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.955",
+        "updatedAt": "2026-10-03 06:08:04.955"
+    },
+    {
+        "id": "cmurzqe70000onn1mmq3f3uqz",
+        "projectId": "cmurzqe70000nnn1ma12m43mv",
+        "locale": "it",
+        "title": "Case sicure dopo il sisma",
+        "slug": "case-sicure-dopo-il-sisma",
+        "sector": "Casa & comunità",
+        "metaLine": "14 case · 3 villaggi",
+        "summary": "Ricostruiamo abitazioni antisismiche insieme alle famiglie, usando materiali e manodopera locali.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Ricostruiamo abitazioni antisismiche insieme alle famiglie, usando materiali e manodopera locali."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "[[TODO: descrizione completa del progetto, obiettivi e risultati]]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.956",
+        "updatedAt": "2026-10-03 06:08:04.956"
+    },
+    {
+        "id": "cmurzqe70000pnn1mgf043w3q",
+        "projectId": "cmurzqe70000nnn1ma12m43mv",
+        "locale": "en",
+        "title": "Safe homes after the earthquake",
+        "slug": "safe-homes-after-the-earthquake",
+        "sector": "Home & community",
+        "metaLine": "14 homes · 3 villages",
+        "summary": "Rebuilding earthquake-resistant homes with families, using local materials and labour.",
+        "body": {
+            "__json": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Rebuilding earthquake-resistant homes with families, using local materials and labour."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "[[TODO: full project description, goals and results]]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "seoTitle": null,
+        "seoDescription": null,
+        "createdAt": "2026-10-03 06:08:04.956",
+        "updatedAt": "2026-10-03 06:08:04.956"
+    }
+]

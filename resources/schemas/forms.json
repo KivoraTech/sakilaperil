@@ -1,0 +1,548 @@
+{
+  "contactSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 120,
+        "x-trim": true
+      },
+      "email": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 254,
+        "x-trim": true
+      },
+      "phone": {
+        "type": "string",
+        "maxLength": 40,
+        "pattern": "^[+()\\d\\s./-]*$",
+        "x-trim": true
+      },
+      "subject": {
+        "type": "string",
+        "enum": [
+          "info",
+          "donations",
+          "volunteering",
+          "partnership",
+          "press",
+          "other"
+        ]
+      },
+      "message": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 5000,
+        "x-trim": true
+      },
+      "consent": {
+        "type": "boolean",
+        "const": true
+      }
+    },
+    "required": [
+      "name",
+      "email",
+      "message",
+      "consent"
+    ]
+  },
+  "emailField": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 254,
+    "x-trim": true
+  },
+  "formSchemas": {
+    "contact": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "x-trim": true
+        },
+        "email": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 254,
+          "x-trim": true
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[+()\\d\\s./-]*$",
+          "x-trim": true
+        },
+        "subject": {
+          "type": "string",
+          "enum": [
+            "info",
+            "donations",
+            "volunteering",
+            "partnership",
+            "press",
+            "other"
+          ]
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 5000,
+          "x-trim": true
+        },
+        "consent": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "required": [
+        "name",
+        "email",
+        "message",
+        "consent"
+      ]
+    },
+    "volunteer": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "x-trim": true
+        },
+        "lastName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "x-trim": true
+        },
+        "email": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 254,
+          "x-trim": true
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[+()\\d\\s./-]*$",
+          "x-trim": true
+        },
+        "country": {
+          "type": "string",
+          "maxLength": 80,
+          "x-trim": true
+        },
+        "city": {
+          "type": "string",
+          "maxLength": 120,
+          "x-trim": true
+        },
+        "skills": {
+          "type": "string",
+          "maxLength": 1000,
+          "x-trim": true
+        },
+        "availability": {
+          "type": "string",
+          "maxLength": 500,
+          "x-trim": true
+        },
+        "message": {
+          "type": "string",
+          "maxLength": 3000,
+          "x-trim": true
+        },
+        "consent": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "required": [
+        "firstName",
+        "lastName",
+        "email",
+        "consent"
+      ]
+    },
+    "membership": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "x-trim": true
+        },
+        "lastName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "x-trim": true
+        },
+        "email": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 254,
+          "x-trim": true
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[+()\\d\\s./-]*$",
+          "x-trim": true
+        },
+        "address": {
+          "type": "string",
+          "maxLength": 300,
+          "x-trim": true
+        },
+        "city": {
+          "type": "string",
+          "maxLength": 120,
+          "x-trim": true
+        },
+        "country": {
+          "type": "string",
+          "maxLength": 80,
+          "x-trim": true
+        },
+        "membershipType": {
+          "type": "string",
+          "enum": [
+            "ordinary",
+            "supporting"
+          ]
+        },
+        "message": {
+          "type": "string",
+          "maxLength": 3000,
+          "x-trim": true
+        },
+        "consent": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "required": [
+        "firstName",
+        "lastName",
+        "email",
+        "membershipType",
+        "consent"
+      ]
+    },
+    "partner": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "organization": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "x-trim": true
+        },
+        "contactName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "x-trim": true
+        },
+        "email": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 254,
+          "x-trim": true
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[+()\\d\\s./-]*$",
+          "x-trim": true
+        },
+        "website": {
+          "type": "string",
+          "maxLength": 500,
+          "x-trim": true
+        },
+        "partnershipType": {
+          "type": "string",
+          "enum": [
+            "restaurant",
+            "company",
+            "school",
+            "association",
+            "other"
+          ]
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 5000,
+          "x-trim": true
+        },
+        "consent": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "required": [
+        "organization",
+        "contactName",
+        "email",
+        "message",
+        "consent"
+      ]
+    }
+  },
+  "membershipSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "firstName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "x-trim": true
+      },
+      "lastName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "x-trim": true
+      },
+      "email": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 254,
+        "x-trim": true
+      },
+      "phone": {
+        "type": "string",
+        "maxLength": 40,
+        "pattern": "^[+()\\d\\s./-]*$",
+        "x-trim": true
+      },
+      "address": {
+        "type": "string",
+        "maxLength": 300,
+        "x-trim": true
+      },
+      "city": {
+        "type": "string",
+        "maxLength": 120,
+        "x-trim": true
+      },
+      "country": {
+        "type": "string",
+        "maxLength": 80,
+        "x-trim": true
+      },
+      "membershipType": {
+        "type": "string",
+        "enum": [
+          "ordinary",
+          "supporting"
+        ]
+      },
+      "message": {
+        "type": "string",
+        "maxLength": 3000,
+        "x-trim": true
+      },
+      "consent": {
+        "type": "boolean",
+        "const": true
+      }
+    },
+    "required": [
+      "firstName",
+      "lastName",
+      "email",
+      "membershipType",
+      "consent"
+    ]
+  },
+  "newsletterSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "email": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 254,
+        "x-trim": true
+      },
+      "consent": {
+        "type": "boolean",
+        "const": true
+      }
+    },
+    "required": [
+      "email",
+      "consent"
+    ]
+  },
+  "partnerSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "organization": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200,
+        "x-trim": true
+      },
+      "contactName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 120,
+        "x-trim": true
+      },
+      "email": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 254,
+        "x-trim": true
+      },
+      "phone": {
+        "type": "string",
+        "maxLength": 40,
+        "pattern": "^[+()\\d\\s./-]*$",
+        "x-trim": true
+      },
+      "website": {
+        "type": "string",
+        "maxLength": 500,
+        "x-trim": true
+      },
+      "partnershipType": {
+        "type": "string",
+        "enum": [
+          "restaurant",
+          "company",
+          "school",
+          "association",
+          "other"
+        ]
+      },
+      "message": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 5000,
+        "x-trim": true
+      },
+      "consent": {
+        "type": "boolean",
+        "const": true
+      }
+    },
+    "required": [
+      "organization",
+      "contactName",
+      "email",
+      "message",
+      "consent"
+    ]
+  },
+  "spamMetaSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "hp_extra": {
+        "type": "string",
+        "maxLength": 500
+      },
+      "startedAt": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 9007199254740991
+      },
+      "turnstileToken": {
+        "type": "string",
+        "maxLength": 4096
+      },
+      "source": {
+        "type": "string",
+        "maxLength": 60,
+        "pattern": "^[a-z0-9:_-]*$",
+        "x-trim": true
+      }
+    }
+  },
+  "volunteerSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "firstName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "x-trim": true
+      },
+      "lastName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "x-trim": true
+      },
+      "email": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 254,
+        "x-trim": true
+      },
+      "phone": {
+        "type": "string",
+        "maxLength": 40,
+        "pattern": "^[+()\\d\\s./-]*$",
+        "x-trim": true
+      },
+      "country": {
+        "type": "string",
+        "maxLength": 80,
+        "x-trim": true
+      },
+      "city": {
+        "type": "string",
+        "maxLength": 120,
+        "x-trim": true
+      },
+      "skills": {
+        "type": "string",
+        "maxLength": 1000,
+        "x-trim": true
+      },
+      "availability": {
+        "type": "string",
+        "maxLength": 500,
+        "x-trim": true
+      },
+      "message": {
+        "type": "string",
+        "maxLength": 3000,
+        "x-trim": true
+      },
+      "consent": {
+        "type": "boolean",
+        "const": true
+      }
+    },
+    "required": [
+      "firstName",
+      "lastName",
+      "email",
+      "consent"
+    ]
+  }
+}

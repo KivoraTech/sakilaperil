@@ -1,0 +1,5 @@
+@extends('errors.minimal')
+@section('code', 'Errore 404')
+@section('title_it', 'Questa pagina si è persa')
+@section('body_it', 'Forse è stata spostata o non esiste più.')
+@section('body_en', 'This page may have moved or no longer exists.')

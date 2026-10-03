@@ -1,0 +1,3 @@
+/* Admin + everything: Tailwind scans the whole project (admin React, install page). */
+@import "tailwindcss";
+@import "./core.css";

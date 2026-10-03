@@ -1,0 +1,65 @@
+[
+    {
+        "id": "cmurzqe7k001snn1mejdo983s",
+        "key": "home",
+        "status": "PUBLISHED",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "updatedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.976",
+        "updatedAt": "2026-10-03 06:08:04.976"
+    },
+    {
+        "id": "cmurzqe8i002rnn1mrfmrbkpg",
+        "key": "about",
+        "status": "PUBLISHED",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "updatedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:05.010",
+        "updatedAt": "2026-10-03 06:08:05.010"
+    },
+    {
+        "id": "cmurzqe8q0032nn1m9nxrwbjq",
+        "key": "get-involved",
+        "status": "PUBLISHED",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "updatedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:05.018",
+        "updatedAt": "2026-10-03 06:08:05.018"
+    },
+    {
+        "id": "cmurzqe8w003bnn1m6r44chef",
+        "key": "transparency",
+        "status": "PUBLISHED",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "updatedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:05.024",
+        "updatedAt": "2026-10-03 06:08:05.024"
+    },
+    {
+        "id": "cmurzqe90003inn1m0wlzo5aq",
+        "key": "contact",
+        "status": "PUBLISHED",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "updatedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:05.028",
+        "updatedAt": "2026-10-03 06:08:05.028"
+    },
+    {
+        "id": "cmurzqe94003pnn1mmv66o3cj",
+        "key": "privacy",
+        "status": "PUBLISHED",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "updatedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:05.032",
+        "updatedAt": "2026-10-03 06:08:05.032"
+    },
+    {
+        "id": "cmurzqe98003wnn1muxilp845",
+        "key": "cookies",
+        "status": "PUBLISHED",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "updatedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:05.036",
+        "updatedAt": "2026-10-03 06:08:05.036"
+    }
+]

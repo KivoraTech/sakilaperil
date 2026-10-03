@@ -1,0 +1,16 @@
+[
+    {
+        "id": "cmurzqe71000qnn1mj17jcwbr",
+        "key": "news",
+        "position": 0,
+        "createdAt": "2026-10-03 06:08:04.957",
+        "updatedAt": "2026-10-03 06:08:04.957"
+    },
+    {
+        "id": "cmurzqe72000tnn1m2q2pvx08",
+        "key": "stories",
+        "position": 1,
+        "createdAt": "2026-10-03 06:08:04.958",
+        "updatedAt": "2026-10-03 06:08:04.958"
+    }
+]

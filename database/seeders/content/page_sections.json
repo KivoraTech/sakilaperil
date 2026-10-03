@@ -1,0 +1,1626 @@
+[
+    {
+        "id": "cmurzqe7n001tnn1md45divln",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "hero",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Associazione di solidarietà · Italia ↔ Nepal",
+                "heading": "Insieme, apriamo porte alle",
+                "headingAccent": "famiglie del Nepal.",
+                "subheading": "Istruzione, salute e una casa sicura. Sosteniamo chi vive in difficoltà con trasparenza e rispetto, un passo alla volta.",
+                "image": {
+                    "assetId": "cmurzqe6e0000nn1mwomnkl8m"
+                },
+                "primaryCta": {
+                    "label": "Dona ora",
+                    "href": "#dona"
+                },
+                "secondaryCta": {
+                    "label": "Scopri i progetti",
+                    "href": "/projects"
+                },
+                "highlightProjectId": "cmurzqe6x000hnn1mxqhuiqii"
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "height": "full",
+                "overlay": "dark"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.979",
+        "updatedAt": "2026-10-03 06:08:04.979"
+    },
+    {
+        "id": "cmurzqe7p001unn1mx1h3r3pu",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "marquee",
+        "schemaVersion": 1,
+        "position": 1,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "items": [
+                    {
+                        "text": "Istruzione"
+                    },
+                    {
+                        "text": "Salute"
+                    },
+                    {
+                        "text": "Casa"
+                    },
+                    {
+                        "text": "Dignità"
+                    },
+                    {
+                        "text": "Comunità"
+                    },
+                    {
+                        "text": "Speranza"
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "deep",
+                "style": "alternate",
+                "speed": "normal"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.981",
+        "updatedAt": "2026-10-03 06:08:04.981"
+    },
+    {
+        "id": "cmurzqe7q001vnn1mvq2jsha5",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "impactStats",
+        "schemaVersion": 1,
+        "position": 2,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "source": "settings",
+                "items": []
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "himalaya"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.982",
+        "updatedAt": "2026-10-03 06:08:04.982"
+    },
+    {
+        "id": "cmurzqe7r001wnn1mm5zn3agn",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "imageText",
+        "schemaVersion": 1,
+        "position": 3,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Chi siamo",
+                "heading": "Crediamo che ogni famiglia meriti una scuola vicina, cure quando servono e un tetto sicuro. Dall'Italia al Nepal, trasformiamo la solidarietà in",
+                "headingAccent": "opportunità concrete.",
+                "body": "Con le comunità, mai al posto loro.",
+                "image": {
+                    "assetId": "cmurzqe6g0001nn1mhruq7kjs"
+                },
+                "secondaryImage": {
+                    "assetId": "cmurzqe6h0002nn1moxr5xwav"
+                },
+                "badgeText": "DAL 2017 · ITALIA ↔ NEPAL",
+                "primaryCta": {
+                    "label": "La nostra storia",
+                    "href": "/chi-siamo"
+                },
+                "secondaryCta": {
+                    "label": "Leggi i rapporti annuali",
+                    "href": "/trasparenza"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "chi-siamo",
+                "background": "paper",
+                "imagePosition": "right"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.983",
+        "updatedAt": "2026-10-03 06:08:04.983"
+    },
+    {
+        "id": "cmurzqe7s001xnn1maex31zps",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "services",
+        "schemaVersion": 1,
+        "position": 4,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Dove va il tuo aiuto",
+                "heading": "Progetti che",
+                "headingAccent": "cambiano la vita",
+                "lead": "Ogni progetto nasce ascoltando le comunità locali. Segui i progressi, passo dopo passo.",
+                "source": "featured",
+                "projectIds": [],
+                "limit": 4,
+                "endCard": {
+                    "heading": "Ogni progetto inizia con qualcuno come te.",
+                    "body": "Scegli dove far arrivare il tuo aiuto, oppure lascia che sia la comunità a decidere dove serve di più.",
+                    "cta": {
+                        "label": "Dona ora",
+                        "href": "#dona"
+                    }
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "progetti",
+                "background": "paper",
+                "layout": "carousel"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.984",
+        "updatedAt": "2026-10-03 06:08:04.984"
+    },
+    {
+        "id": "cmurzqe7t001ynn1mk6nrv55j",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "quote",
+        "schemaVersion": 1,
+        "position": 5,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "quote": "Dove finiscono le strade,",
+                "quoteAccent": "inizia il nostro lavoro.",
+                "body": "Raggiungiamo i villaggi che gli aiuti spesso dimenticano",
+                "image": {
+                    "assetId": "cmurzqe6m0007nn1mjsk84sxv"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "deep",
+                "variant": "band"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.985",
+        "updatedAt": "2026-10-03 06:08:04.985"
+    },
+    {
+        "id": "cmurzqe7u001znn1mjls0lk9o",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "quote",
+        "schemaVersion": 1,
+        "position": 6,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Una storia vera",
+                "quote": "Oggi mia figlia va a scuola ogni giorno. Sogna di diventare insegnante, come la maestra che l'ha accolta il primo giorno.",
+                "author": "Maya",
+                "role": "mamma di Asha, 9 anni · Sindhupalchok",
+                "body": "Dietro ogni numero c'è un volto. Raccontiamo le storie delle famiglie che incontriamo con il loro consenso, nel rispetto della loro dignità e privacy.",
+                "image": {
+                    "assetId": "cmurzqe6m0008nn1moozboro6"
+                },
+                "imageCaption": "Una casa di famiglia tra i campi, distretto di Sindhupalchok",
+                "cta": {
+                    "label": "Aiuta una famiglia come quella di Maya",
+                    "href": "#dona"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "storie",
+                "background": "paper",
+                "variant": "story"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.986",
+        "updatedAt": "2026-10-03 06:08:04.986"
+    },
+    {
+        "id": "cmurzqe7u0020nn1met6dw0op",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "timeline",
+        "schemaVersion": 1,
+        "position": 7,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Il nostro cammino",
+                "heading": "Da una cena tra amici a",
+                "headingAccent": "12 progetti",
+                "items": [
+                    {
+                        "year": "2017",
+                        "title": "L'inizio",
+                        "body": "Sakila e un gruppo di amici in Italia raccolgono i primi fondi per una famiglia di Kathmandu.",
+                        "image": {
+                            "assetId": "cmurzqe6n0009nn1m1ydpeyf6"
+                        }
+                    },
+                    {
+                        "year": "2019",
+                        "title": "La prima scuola",
+                        "body": "Nasce l'associazione e con lei il primo progetto scolastico nel distretto di Sindhupalchok.",
+                        "image": {
+                            "assetId": "cmurzqe6o000ann1mj2orezll"
+                        }
+                    },
+                    {
+                        "year": "2022",
+                        "title": "Salute per tutti",
+                        "body": "Partono i campi medici mobili per mamme e bambini nelle zone rurali.",
+                        "image": {
+                            "assetId": "cmurzqe6o000bnn1myh35kg1n"
+                        }
+                    },
+                    {
+                        "year": "2026",
+                        "title": "Oggi",
+                        "body": "12 progetti attivi, 320 famiglie sostenute e una rete di amici in tutta Italia.",
+                        "image": {
+                            "assetId": "cmurzqe6p000cnn1m0b78i0ko"
+                        }
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.986",
+        "updatedAt": "2026-10-03 06:08:04.986"
+    },
+    {
+        "id": "cmurzqe7v0021nn1mafgzgqu3",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "gallery",
+        "schemaVersion": 1,
+        "position": 8,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Galleria",
+                "heading": "Il Nepal che",
+                "headingAccent": "amiamo",
+                "lead": "Momenti dai villaggi, dalle scuole e dalle montagne.",
+                "source": "album",
+                "albumId": "cmurzqe7e001enn1mtwnkl856",
+                "images": [],
+                "limit": 8
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "galleria",
+                "background": "paper",
+                "layout": "masonry"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.987",
+        "updatedAt": "2026-10-03 06:08:04.987"
+    },
+    {
+        "id": "cmurzqe7w0022nn1mliu2gdof",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "donateCta",
+        "schemaVersion": 1,
+        "position": 9,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Il tuo dono in azione",
+                "heading": "Piccoli gesti,",
+                "headingAccent": "grandi cambiamenti",
+                "lead": "Scegli un importo e scopri cosa rende possibile. Ogni euro arriva dove serve, e ti diciamo esattamente come.",
+                "gifts": [
+                    {
+                        "amount": 10,
+                        "description": "Quaderni, penne e uno zaino per un bambino, per tutto l'anno scolastico.",
+                        "image": {
+                            "assetId": "cmurzqe6q000enn1mb3n56gzj"
+                        }
+                    },
+                    {
+                        "amount": 25,
+                        "description": "Una visita medica completa e un kit igienico per una mamma e il suo bambino.",
+                        "image": {
+                            "assetId": "cmurzqe6o000bnn1myh35kg1n"
+                        }
+                    },
+                    {
+                        "amount": 50,
+                        "description": "Materiali per rinforzare il tetto di una casa prima della stagione dei monsoni.",
+                        "image": {
+                            "assetId": "cmurzqe6j0005nn1mkx40ygeu"
+                        }
+                    }
+                ],
+                "reasons": [
+                    "Bilanci e rapporti pubblicati ogni anno",
+                    "Progetti scelti insieme alle comunità locali",
+                    "Pagamenti sicuri: carta, PayPal, eSewa o Khalti",
+                    "Ricevuta via email e aggiornamenti dal progetto"
+                ],
+                "trustStats": [
+                    {
+                        "value": "94%",
+                        "label": "ai progetti"
+                    },
+                    {
+                        "value": "1.480",
+                        "label": "donatori"
+                    },
+                    {
+                        "value": "9",
+                        "label": "anni di impegno"
+                    }
+                ],
+                "sideImage": {
+                    "assetId": "cmurzqe6r000fnn1mlnxn4t0s"
+                },
+                "showWidget": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "dona",
+                "background": "cream"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.988",
+        "updatedAt": "2026-10-03 06:08:04.988"
+    },
+    {
+        "id": "cmurzqe7x0023nn1mnrbu8af8",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "testimonials",
+        "schemaVersion": 1,
+        "position": 10,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Voci dei nostri sostenitori",
+                "items": [
+                    {
+                        "quote": "Ho iniziato con una cena solidale da Sakila. Oggi ricevo le foto della scuola che abbiamo aiutato a costruire. È la donazione più concreta che abbia mai fatto.",
+                        "name": "Giulia R.",
+                        "role": "donatrice da Milano"
+                    },
+                    {
+                        "quote": "Sono stato in Nepal come volontario per tre settimane. Ho visto con i miei occhi dove arrivano i fondi: ogni euro ha un nome e un volto.",
+                        "name": "Marco B.",
+                        "role": "volontario da Bologna"
+                    },
+                    {
+                        "quote": "Come ristorante partner, organizziamo una serata al mese per il Nepal. I nostri clienti adorano sapere che la cena aiuta una famiglia.",
+                        "name": "Ristorante Da Sakila",
+                        "role": "partner dal 2017"
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.989",
+        "updatedAt": "2026-10-03 06:08:04.989"
+    },
+    {
+        "id": "cmurzqe7y0024nn1mrj6j0yse",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "newsList",
+        "schemaVersion": 1,
+        "position": 11,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Dal campo",
+                "heading": "Ultime",
+                "headingAccent": "notizie",
+                "limit": 3,
+                "showAllLink": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "notizie",
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.990",
+        "updatedAt": "2026-10-03 06:08:04.990"
+    },
+    {
+        "id": "cmurzqe7z0025nn1msauw6573",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "partners",
+        "schemaVersion": 1,
+        "position": 12,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Amici e partner",
+                "heading": "Aziende e ristoranti che scelgono il Nepal",
+                "body": "Dal Ristorante Da Sakila alle serate solidali: diventa partner e porta la tua comunità con noi.",
+                "partners": [
+                    {
+                        "name": "Ristorante Da Sakila"
+                    }
+                ],
+                "cta": {
+                    "label": "Diventa partner",
+                    "href": "/partecipa#partner"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.991",
+        "updatedAt": "2026-10-03 06:08:04.991"
+    },
+    {
+        "id": "cmurzqe800026nn1mw3okiikg",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "cta",
+        "schemaVersion": 1,
+        "position": 13,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "5×1000",
+                "heading": "Dona il tuo 5×1000 a Sakila per il Nepal",
+                "body": "Non ti costa nulla: basta una firma nella dichiarazione dei redditi e il nostro codice fiscale.",
+                "primaryCta": {
+                    "label": "Scopri come",
+                    "href": "/partecipa"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "tone": "marigold"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.992",
+        "updatedAt": "2026-10-03 06:08:04.992"
+    },
+    {
+        "id": "cmurzqe810027nn1m5q7fzi7q",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "it",
+        "type": "newsletter",
+        "schemaVersion": 1,
+        "position": 14,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Resta in contatto",
+                "heading": "Storie dal Nepal,",
+                "headingAccent": "una volta al mese",
+                "note": "Niente spam. Puoi cancellarti quando vuoi."
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "newsletter",
+                "background": "paper",
+                "tone": "himalaya"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.993",
+        "updatedAt": "2026-10-03 06:08:04.993"
+    },
+    {
+        "id": "cmurzqe85002ann1me9r1oc3v",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "hero",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Solidarity association · Italy ↔ Nepal",
+                "heading": "Together, we open doors for",
+                "headingAccent": "families in Nepal.",
+                "subheading": "Education, health and a safe home. We support people facing hardship with transparency and respect, one step at a time.",
+                "image": {
+                    "assetId": "cmurzqe6e0000nn1mwomnkl8m"
+                },
+                "primaryCta": {
+                    "label": "Donate now",
+                    "href": "#dona"
+                },
+                "secondaryCta": {
+                    "label": "See our projects",
+                    "href": "/projects"
+                },
+                "highlightProjectId": "cmurzqe6x000hnn1mxqhuiqii"
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "height": "full",
+                "overlay": "dark"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.997",
+        "updatedAt": "2026-10-03 06:08:04.997"
+    },
+    {
+        "id": "cmurzqe86002bnn1monczd4su",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "marquee",
+        "schemaVersion": 1,
+        "position": 1,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "items": [
+                    {
+                        "text": "Education"
+                    },
+                    {
+                        "text": "Health"
+                    },
+                    {
+                        "text": "Home"
+                    },
+                    {
+                        "text": "Dignity"
+                    },
+                    {
+                        "text": "Community"
+                    },
+                    {
+                        "text": "Hope"
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "deep",
+                "style": "alternate",
+                "speed": "normal"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.998",
+        "updatedAt": "2026-10-03 06:08:04.998"
+    },
+    {
+        "id": "cmurzqe87002cnn1mvscif5ut",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "impactStats",
+        "schemaVersion": 1,
+        "position": 2,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "source": "settings",
+                "items": []
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "himalaya"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.999",
+        "updatedAt": "2026-10-03 06:08:04.999"
+    },
+    {
+        "id": "cmurzqe87002dnn1m63watxi0",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "imageText",
+        "schemaVersion": 1,
+        "position": 3,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "About us",
+                "heading": "We believe every family deserves a school nearby, care when it's needed and a safe roof overhead. From Italy to Nepal, we turn solidarity into",
+                "headingAccent": "real opportunities.",
+                "body": "With communities, never in their place.",
+                "image": {
+                    "assetId": "cmurzqe6g0001nn1mhruq7kjs"
+                },
+                "secondaryImage": {
+                    "assetId": "cmurzqe6h0002nn1moxr5xwav"
+                },
+                "badgeText": "SINCE 2017 · ITALY ↔ NEPAL",
+                "primaryCta": {
+                    "label": "Our story",
+                    "href": "/about-us"
+                },
+                "secondaryCta": {
+                    "label": "Read our annual reports",
+                    "href": "/transparency"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "about",
+                "background": "paper",
+                "imagePosition": "right"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:04.999",
+        "updatedAt": "2026-10-03 06:08:04.999"
+    },
+    {
+        "id": "cmurzqe88002enn1m0ghrotsy",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "services",
+        "schemaVersion": 1,
+        "position": 4,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Where your help goes",
+                "heading": "Projects that",
+                "headingAccent": "change lives",
+                "lead": "Every project starts by listening to local communities. Follow the progress, step by step.",
+                "source": "featured",
+                "projectIds": [],
+                "limit": 4,
+                "endCard": {
+                    "heading": "Every project starts with someone like you.",
+                    "body": "Choose where your help goes, or let the community decide where it's needed most.",
+                    "cta": {
+                        "label": "Donate now",
+                        "href": "#dona"
+                    }
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "projects",
+                "background": "paper",
+                "layout": "carousel"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.000",
+        "updatedAt": "2026-10-03 06:08:05.000"
+    },
+    {
+        "id": "cmurzqe88002fnn1ml1vikk89",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "quote",
+        "schemaVersion": 1,
+        "position": 5,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "quote": "Where the roads end,",
+                "quoteAccent": "our work begins.",
+                "body": "We reach the villages that aid often forgets",
+                "image": {
+                    "assetId": "cmurzqe6m0007nn1mjsk84sxv"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "deep",
+                "variant": "band"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.000",
+        "updatedAt": "2026-10-03 06:08:05.000"
+    },
+    {
+        "id": "cmurzqe89002gnn1m9yyhvhos",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "quote",
+        "schemaVersion": 1,
+        "position": 6,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "A true story",
+                "quote": "Today my daughter goes to school every day. She dreams of becoming a teacher, like the one who welcomed her on her first day.",
+                "author": "Maya",
+                "role": "mother of Asha, 9 · Sindhupalchok",
+                "body": "Behind every number is a face. We share the stories of the families we meet with their consent, respecting their dignity and privacy.",
+                "image": {
+                    "assetId": "cmurzqe6m0008nn1moozboro6"
+                },
+                "imageCaption": "A family home among the fields, Sindhupalchok district",
+                "cta": {
+                    "label": "Help a family like Maya's",
+                    "href": "#dona"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "stories",
+                "background": "paper",
+                "variant": "story"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.001",
+        "updatedAt": "2026-10-03 06:08:05.001"
+    },
+    {
+        "id": "cmurzqe8a002hnn1mtgioet3x",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "timeline",
+        "schemaVersion": 1,
+        "position": 7,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Our journey",
+                "heading": "From a dinner with friends to",
+                "headingAccent": "12 projects",
+                "items": [
+                    {
+                        "year": "2017",
+                        "title": "The beginning",
+                        "body": "Sakila and a group of friends in Italy raise the first funds for a family in Kathmandu.",
+                        "image": {
+                            "assetId": "cmurzqe6n0009nn1m1ydpeyf6"
+                        }
+                    },
+                    {
+                        "year": "2019",
+                        "title": "The first school",
+                        "body": "The association is founded, together with its first school project in Sindhupalchok.",
+                        "image": {
+                            "assetId": "cmurzqe6o000ann1mj2orezll"
+                        }
+                    },
+                    {
+                        "year": "2022",
+                        "title": "Health for all",
+                        "body": "Mobile medical camps for mothers and children begin in rural areas.",
+                        "image": {
+                            "assetId": "cmurzqe6o000bnn1myh35kg1n"
+                        }
+                    },
+                    {
+                        "year": "2026",
+                        "title": "Today",
+                        "body": "12 active projects, 320 families supported and a network of friends across Italy.",
+                        "image": {
+                            "assetId": "cmurzqe6p000cnn1m0b78i0ko"
+                        }
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.002",
+        "updatedAt": "2026-10-03 06:08:05.002"
+    },
+    {
+        "id": "cmurzqe8a002inn1mstjtatxo",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "gallery",
+        "schemaVersion": 1,
+        "position": 8,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Gallery",
+                "heading": "The Nepal we",
+                "headingAccent": "love",
+                "lead": "Moments from villages, schools and mountains.",
+                "source": "album",
+                "albumId": "cmurzqe7e001enn1mtwnkl856",
+                "images": [],
+                "limit": 8
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "gallery",
+                "background": "paper",
+                "layout": "masonry"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.002",
+        "updatedAt": "2026-10-03 06:08:05.002"
+    },
+    {
+        "id": "cmurzqe8b002jnn1mt6uevfm1",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "donateCta",
+        "schemaVersion": 1,
+        "position": 9,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Your gift in action",
+                "heading": "Small gestures,",
+                "headingAccent": "big changes",
+                "lead": "Choose an amount and see what it makes possible. Every euro goes where it's needed, and we tell you exactly how.",
+                "gifts": [
+                    {
+                        "amount": 10,
+                        "description": "Notebooks, pens and a school bag for one child, for a whole school year.",
+                        "image": {
+                            "assetId": "cmurzqe6q000enn1mb3n56gzj"
+                        }
+                    },
+                    {
+                        "amount": 25,
+                        "description": "A full medical check-up and a hygiene kit for a mother and her baby.",
+                        "image": {
+                            "assetId": "cmurzqe6o000bnn1myh35kg1n"
+                        }
+                    },
+                    {
+                        "amount": 50,
+                        "description": "Materials to strengthen a family's roof before the monsoon season.",
+                        "image": {
+                            "assetId": "cmurzqe6j0005nn1mkx40ygeu"
+                        }
+                    }
+                ],
+                "reasons": [
+                    "Accounts and reports published every year",
+                    "Projects chosen together with local communities",
+                    "Secure payment: card, PayPal, eSewa or Khalti",
+                    "Email receipt and updates from the project"
+                ],
+                "trustStats": [
+                    {
+                        "value": "94%",
+                        "label": "to projects"
+                    },
+                    {
+                        "value": "1.480",
+                        "label": "donors"
+                    },
+                    {
+                        "value": "9",
+                        "label": "years of commitment"
+                    }
+                ],
+                "sideImage": {
+                    "assetId": "cmurzqe6r000fnn1mlnxn4t0s"
+                },
+                "showWidget": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "dona",
+                "background": "cream"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.003",
+        "updatedAt": "2026-10-03 06:08:05.003"
+    },
+    {
+        "id": "cmurzqe8c002knn1msqm5owrm",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "testimonials",
+        "schemaVersion": 1,
+        "position": 10,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Voices of our supporters",
+                "items": [
+                    {
+                        "quote": "I started with a charity dinner at Sakila. Now I receive photos of the school we helped build. It's the most tangible donation I've ever made.",
+                        "name": "Giulia R.",
+                        "role": "donor from Milan"
+                    },
+                    {
+                        "quote": "I volunteered in Nepal for three weeks. I saw with my own eyes where the money goes: every euro has a name and a face.",
+                        "name": "Marco B.",
+                        "role": "volunteer from Bologna"
+                    },
+                    {
+                        "quote": "As a partner restaurant, we host one evening a month for Nepal. Our guests love knowing their dinner helps a family.",
+                        "name": "Ristorante Da Sakila",
+                        "role": "partner since 2017"
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.004",
+        "updatedAt": "2026-10-03 06:08:05.004"
+    },
+    {
+        "id": "cmurzqe8c002lnn1m6pzgsl93",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "newsList",
+        "schemaVersion": 1,
+        "position": 11,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "From the field",
+                "heading": "Latest",
+                "headingAccent": "news",
+                "limit": 3,
+                "showAllLink": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "news",
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.004",
+        "updatedAt": "2026-10-03 06:08:05.004"
+    },
+    {
+        "id": "cmurzqe8d002mnn1m61184z47",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "partners",
+        "schemaVersion": 1,
+        "position": 12,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Friends & partners",
+                "heading": "Businesses and restaurants that choose Nepal",
+                "body": "From Ristorante Da Sakila to charity evenings: become a partner and bring your community with you.",
+                "partners": [
+                    {
+                        "name": "Ristorante Da Sakila"
+                    }
+                ],
+                "cta": {
+                    "label": "Become a partner",
+                    "href": "/get-involved#partner"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.005",
+        "updatedAt": "2026-10-03 06:08:05.005"
+    },
+    {
+        "id": "cmurzqe8e002nnn1mfr2s3v3j",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "cta",
+        "schemaVersion": 1,
+        "position": 13,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "5×1000",
+                "heading": "Give your 5×1000 to Sakila per il Nepal",
+                "body": "It costs you nothing: just sign your Italian tax return and add our tax code.",
+                "primaryCta": {
+                    "label": "Find out how",
+                    "href": "/get-involved"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "tone": "marigold"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.006",
+        "updatedAt": "2026-10-03 06:08:05.006"
+    },
+    {
+        "id": "cmurzqe8e002onn1m480t0ftg",
+        "pageId": "cmurzqe7k001snn1mejdo983s",
+        "locale": "en",
+        "type": "newsletter",
+        "schemaVersion": 1,
+        "position": 14,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Stay in touch",
+                "heading": "Stories from Nepal,",
+                "headingAccent": "once a month",
+                "note": "No spam. Unsubscribe anytime."
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "newsletter",
+                "background": "paper",
+                "tone": "himalaya"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.006",
+        "updatedAt": "2026-10-03 06:08:05.006"
+    },
+    {
+        "id": "cmurzqe8j002snn1mttr2s9z0",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "locale": "it",
+        "type": "imageText",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Chi siamo",
+                "heading": "Un'associazione nata per aiutare le famiglie nepalesi",
+                "body": "[[TODO: la storia dell'associazione]]",
+                "image": {
+                    "assetId": "cmurzqe6h0002nn1moxr5xwav"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "imagePosition": "right"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.011",
+        "updatedAt": "2026-10-03 06:08:05.011"
+    },
+    {
+        "id": "cmurzqe8k002tnn1mdxylh4zv",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "locale": "it",
+        "type": "team",
+        "schemaVersion": 1,
+        "position": 1,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Le persone",
+                "lead": "[[TODO: team members]]",
+                "members": []
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.012",
+        "updatedAt": "2026-10-03 06:08:05.012"
+    },
+    {
+        "id": "cmurzqe8l002unn1mltl3xn0a",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "locale": "it",
+        "type": "richText",
+        "schemaVersion": 1,
+        "position": 2,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Dati dell'associazione",
+                "body": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "[[TODO: testo definitivo — dati di registrazione]]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "width": "normal"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.013",
+        "updatedAt": "2026-10-03 06:08:05.013"
+    },
+    {
+        "id": "cmurzqe8n002xnn1meikped5e",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "locale": "en",
+        "type": "imageText",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "About us",
+                "heading": "An association created to help Nepali families",
+                "body": "[[TODO: the association's story]]",
+                "image": {
+                    "assetId": "cmurzqe6h0002nn1moxr5xwav"
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "imagePosition": "right"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.015",
+        "updatedAt": "2026-10-03 06:08:05.015"
+    },
+    {
+        "id": "cmurzqe8o002ynn1moenk0okv",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "locale": "en",
+        "type": "team",
+        "schemaVersion": 1,
+        "position": 1,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Our people",
+                "lead": "[[TODO: team members]]",
+                "members": []
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.016",
+        "updatedAt": "2026-10-03 06:08:05.016"
+    },
+    {
+        "id": "cmurzqe8o002znn1m0s27pycs",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "locale": "en",
+        "type": "richText",
+        "schemaVersion": 1,
+        "position": 2,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Registration details",
+                "body": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "[[TODO: final copy — registration details]]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "width": "normal"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.016",
+        "updatedAt": "2026-10-03 06:08:05.016"
+    },
+    {
+        "id": "cmurzqe8r0033nn1m253zr4jj",
+        "pageId": "cmurzqe8q0032nn1m9nxrwbjq",
+        "locale": "it",
+        "type": "donateCta",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Dona",
+                "heading": "Ogni gesto conta",
+                "gifts": [],
+                "reasons": [],
+                "trustStats": [],
+                "showWidget": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "dona",
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.019",
+        "updatedAt": "2026-10-03 06:08:05.019"
+    },
+    {
+        "id": "cmurzqe8r0034nn1m6i2weoq3",
+        "pageId": "cmurzqe8q0032nn1m9nxrwbjq",
+        "locale": "it",
+        "type": "involveForms",
+        "schemaVersion": 1,
+        "position": 1,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Partecipa",
+                "heading": "Diventa volontario, socio o partner",
+                "forms": [
+                    "volunteer",
+                    "membership",
+                    "partner"
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "partner",
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.019",
+        "updatedAt": "2026-10-03 06:08:05.019"
+    },
+    {
+        "id": "cmurzqe8t0037nn1mk3q2xbv0",
+        "pageId": "cmurzqe8q0032nn1m9nxrwbjq",
+        "locale": "en",
+        "type": "donateCta",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Donate",
+                "heading": "Every gesture counts",
+                "gifts": [],
+                "reasons": [],
+                "trustStats": [],
+                "showWidget": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "dona",
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.021",
+        "updatedAt": "2026-10-03 06:08:05.021"
+    },
+    {
+        "id": "cmurzqe8u0038nn1mkag88pln",
+        "pageId": "cmurzqe8q0032nn1m9nxrwbjq",
+        "locale": "en",
+        "type": "involveForms",
+        "schemaVersion": 1,
+        "position": 1,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Get involved",
+                "heading": "Become a volunteer, member or partner",
+                "forms": [
+                    "volunteer",
+                    "membership",
+                    "partner"
+                ]
+            }
+        },
+        "settings": {
+            "__json": {
+                "anchor": "partner",
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.022",
+        "updatedAt": "2026-10-03 06:08:05.022"
+    },
+    {
+        "id": "cmurzqe8x003cnn1m9duutnrz",
+        "pageId": "cmurzqe8w003bnn1m6r44chef",
+        "locale": "it",
+        "type": "reportsList",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Trasparenza",
+                "heading": "Bilanci e rapporti annuali",
+                "lead": "Pubblichiamo ogni anno come usiamo ogni euro.",
+                "types": []
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.025",
+        "updatedAt": "2026-10-03 06:08:05.025"
+    },
+    {
+        "id": "cmurzqe8y003fnn1m10fsfh3f",
+        "pageId": "cmurzqe8w003bnn1m6r44chef",
+        "locale": "en",
+        "type": "reportsList",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "kicker": "Transparency",
+                "heading": "Annual reports and financial statements",
+                "lead": "Every year we publish how we use every euro.",
+                "types": []
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.026",
+        "updatedAt": "2026-10-03 06:08:05.026"
+    },
+    {
+        "id": "cmurzqe90003jnn1mmfhheeng",
+        "pageId": "cmurzqe90003inn1m0wlzo5aq",
+        "locale": "it",
+        "type": "contact",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Scrivici",
+                "showForm": true,
+                "showDetails": true,
+                "showMap": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.028",
+        "updatedAt": "2026-10-03 06:08:05.028"
+    },
+    {
+        "id": "cmurzqe92003mnn1m5s5oxtys",
+        "pageId": "cmurzqe90003inn1m0wlzo5aq",
+        "locale": "en",
+        "type": "contact",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Get in touch",
+                "showForm": true,
+                "showDetails": true,
+                "showMap": true
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.030",
+        "updatedAt": "2026-10-03 06:08:05.030"
+    },
+    {
+        "id": "cmurzqe94003qnn1m68wfq3xt",
+        "pageId": "cmurzqe94003pnn1mmv66o3cj",
+        "locale": "it",
+        "type": "richText",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Informativa privacy",
+                "body": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "[[TODO: testo definitivo — privacy policy (GDPR)]]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "width": "narrow"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.032",
+        "updatedAt": "2026-10-03 06:08:05.032"
+    },
+    {
+        "id": "cmurzqe96003tnn1m9xmxbla6",
+        "pageId": "cmurzqe94003pnn1mmv66o3cj",
+        "locale": "en",
+        "type": "richText",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Privacy policy",
+                "body": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "[[TODO: final copy — privacy policy (GDPR)]]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "width": "narrow"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.034",
+        "updatedAt": "2026-10-03 06:08:05.034"
+    },
+    {
+        "id": "cmurzqe99003xnn1mno8uk7u5",
+        "pageId": "cmurzqe98003wnn1muxilp845",
+        "locale": "it",
+        "type": "richText",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Cookie policy",
+                "body": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "[[TODO: testo definitivo — cookie policy]]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "width": "narrow"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.037",
+        "updatedAt": "2026-10-03 06:08:05.037"
+    },
+    {
+        "id": "cmurzqe9a0040nn1m5kyoqp84",
+        "pageId": "cmurzqe98003wnn1muxilp845",
+        "locale": "en",
+        "type": "richText",
+        "schemaVersion": 1,
+        "position": 0,
+        "isVisible": 1,
+        "content": {
+            "__json": {
+                "heading": "Cookie policy",
+                "body": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "[[TODO: final copy — cookie policy]]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "settings": {
+            "__json": {
+                "background": "paper",
+                "width": "narrow"
+            }
+        },
+        "createdAt": "2026-10-03 06:08:05.038",
+        "updatedAt": "2026-10-03 06:08:05.038"
+    }
+]

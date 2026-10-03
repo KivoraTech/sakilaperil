@@ -1,0 +1,1493 @@
+{
+  "analyticsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "plausibleDomain": {
+        "type": "string",
+        "maxLength": 200,
+        "x-trim": true
+      },
+      "gaMeasurementId": {
+        "type": "string",
+        "pattern": "^G-[A-Z0-9]{4,20}$",
+        "x-trim": true
+      }
+    }
+  },
+  "appearanceSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "headerStyle": {
+        "default": "transparent-on-hero",
+        "type": "string",
+        "enum": [
+          "transparent-on-hero",
+          "solid"
+        ]
+      },
+      "enableMotion": {
+        "default": true,
+        "type": "boolean"
+      },
+      "accent": {
+        "default": "sindoor",
+        "type": "string",
+        "enum": [
+          "sindoor",
+          "marigold",
+          "himalaya"
+        ]
+      },
+      "logoImageId": {
+        "type": "string",
+        "maxLength": 64
+      },
+      "faviconImageId": {
+        "type": "string",
+        "maxLength": 64
+      }
+    }
+  },
+  "bankDetailsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "accountHolder": {
+        "type": "string",
+        "maxLength": 200,
+        "x-trim": true
+      },
+      "iban": {
+        "type": "string",
+        "maxLength": 50,
+        "x-trim": true
+      },
+      "bic": {
+        "type": "string",
+        "maxLength": 20,
+        "x-trim": true
+      },
+      "bankName": {
+        "type": "string",
+        "maxLength": 200,
+        "x-trim": true
+      },
+      "reference": {
+        "type": "object",
+        "properties": {
+          "it": {
+            "type": "string",
+            "maxLength": 2000,
+            "x-trim": true
+          },
+          "en": {
+            "type": "string",
+            "maxLength": 2000,
+            "x-trim": true
+          }
+        }
+      },
+      "qrImageId": {
+        "type": "string",
+        "maxLength": 64
+      }
+    },
+    "required": [
+      "accountHolder",
+      "iban"
+    ]
+  },
+  "contactSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "email": {
+        "type": "string",
+        "maxLength": 200,
+        "x-trim": true
+      },
+      "phone": {
+        "type": "string",
+        "maxLength": 40,
+        "x-trim": true
+      },
+      "whatsapp": {
+        "type": "string",
+        "maxLength": 40,
+        "x-trim": true
+      },
+      "address": {
+        "type": "object",
+        "properties": {
+          "it": {
+            "type": "string",
+            "maxLength": 2000,
+            "x-trim": true
+          },
+          "en": {
+            "type": "string",
+            "maxLength": 2000,
+            "x-trim": true
+          }
+        }
+      },
+      "mapEmbedUrl": {
+        "type": "string",
+        "maxLength": 1000,
+        "pattern": "^https:\\/\\/",
+        "x-trim": true
+      },
+      "latitude": {
+        "type": "number",
+        "minimum": -90,
+        "maximum": 90
+      },
+      "longitude": {
+        "type": "number",
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    "required": [
+      "email"
+    ]
+  },
+  "donationSettingsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "currency": {
+        "default": "EUR",
+        "type": "string",
+        "enum": [
+          "EUR"
+        ]
+      },
+      "presetAmounts": {
+        "minItems": 1,
+        "maxItems": 6,
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        }
+      },
+      "defaultAmount": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 100000
+      },
+      "impactNotes": {
+        "default": [],
+        "maxItems": 10,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "text": {
+              "type": "object",
+              "properties": {
+                "it": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000,
+                  "x-trim": true
+                },
+                "en": {
+                  "type": "string",
+                  "maxLength": 2000,
+                  "x-trim": true
+                }
+              },
+              "required": [
+                "it"
+              ]
+            }
+          },
+          "required": [
+            "amount",
+            "text"
+          ]
+        }
+      }
+    },
+    "required": [
+      "presetAmounts",
+      "defaultAmount"
+    ]
+  },
+  "featuresSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "demoContent": {
+        "type": "boolean"
+      },
+      "fiveXMille": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "taxCode": {
+            "type": "string",
+            "maxLength": 40
+          }
+        },
+        "required": [
+          "enabled"
+        ]
+      }
+    }
+  },
+  "formMessagesSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "contact": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "intro": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          }
+        }
+      },
+      "volunteer": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "intro": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          }
+        }
+      },
+      "membership": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "intro": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          }
+        }
+      },
+      "partner": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "intro": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          }
+        }
+      },
+      "newsletter": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "intro": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          }
+        }
+      },
+      "donation": {
+        "type": "object",
+        "properties": {
+          "thankYou": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "cancelled": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "impactStatsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "maxItems": 8,
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40,
+          "x-trim": true
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "suffix": {
+          "type": "string",
+          "maxLength": 8,
+          "x-trim": true
+        },
+        "label": {
+          "type": "object",
+          "properties": {
+            "it": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000,
+              "x-trim": true
+            },
+            "en": {
+              "type": "string",
+              "maxLength": 2000,
+              "x-trim": true
+            }
+          },
+          "required": [
+            "it"
+          ]
+        },
+        "progress": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "key",
+        "value",
+        "label"
+      ]
+    }
+  },
+  "nepalPaymentsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "esewa": {
+        "type": "object",
+        "properties": {
+          "qrImageId": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "merchantId": {
+            "type": "string",
+            "maxLength": 100
+          }
+        }
+      },
+      "khalti": {
+        "type": "object",
+        "properties": {
+          "qrImageId": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "merchantId": {
+            "type": "string",
+            "maxLength": 100
+          }
+        }
+      }
+    }
+  },
+  "organizationSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "legalName": {
+        "type": "string",
+        "maxLength": 200,
+        "x-trim": true
+      },
+      "taxCode": {
+        "type": "string",
+        "maxLength": 40,
+        "x-trim": true
+      },
+      "registrationNumber": {
+        "type": "string",
+        "maxLength": 100,
+        "x-trim": true
+      },
+      "registeredOffice": {
+        "type": "string",
+        "maxLength": 300,
+        "x-trim": true
+      },
+      "foundedYear": {
+        "type": "integer",
+        "minimum": 1900,
+        "maximum": 2100
+      }
+    },
+    "required": [
+      "legalName",
+      "taxCode",
+      "registeredOffice"
+    ]
+  },
+  "seoSettingsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "titleTemplate": {
+        "type": "object",
+        "properties": {
+          "it": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000,
+            "x-trim": true
+          },
+          "en": {
+            "type": "string",
+            "maxLength": 2000,
+            "x-trim": true
+          }
+        },
+        "required": [
+          "it"
+        ]
+      },
+      "defaultTitle": {
+        "type": "object",
+        "properties": {
+          "it": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000,
+            "x-trim": true
+          },
+          "en": {
+            "type": "string",
+            "maxLength": 2000,
+            "x-trim": true
+          }
+        },
+        "required": [
+          "it"
+        ]
+      },
+      "defaultDescription": {
+        "type": "object",
+        "properties": {
+          "it": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000,
+            "x-trim": true
+          },
+          "en": {
+            "type": "string",
+            "maxLength": 2000,
+            "x-trim": true
+          }
+        },
+        "required": [
+          "it"
+        ]
+      },
+      "ogImageId": {
+        "type": "string",
+        "maxLength": 64
+      }
+    },
+    "required": [
+      "titleTemplate",
+      "defaultTitle",
+      "defaultDescription"
+    ]
+  },
+  "siteSettingsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "orgName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200,
+        "x-trim": true
+      },
+      "organization": {
+        "type": "object",
+        "properties": {
+          "legalName": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          },
+          "taxCode": {
+            "type": "string",
+            "maxLength": 40,
+            "x-trim": true
+          },
+          "registrationNumber": {
+            "type": "string",
+            "maxLength": 100,
+            "x-trim": true
+          },
+          "registeredOffice": {
+            "type": "string",
+            "maxLength": 300,
+            "x-trim": true
+          },
+          "foundedYear": {
+            "type": "integer",
+            "minimum": 1900,
+            "maximum": 2100
+          }
+        },
+        "required": [
+          "legalName",
+          "taxCode",
+          "registeredOffice"
+        ]
+      },
+      "contact": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          },
+          "phone": {
+            "type": "string",
+            "maxLength": 40,
+            "x-trim": true
+          },
+          "whatsapp": {
+            "type": "string",
+            "maxLength": 40,
+            "x-trim": true
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            }
+          },
+          "mapEmbedUrl": {
+            "type": "string",
+            "maxLength": 1000,
+            "pattern": "^https:\\/\\/",
+            "x-trim": true
+          },
+          "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          }
+        },
+        "required": [
+          "email"
+        ]
+      },
+      "socialLinks": {
+        "maxItems": 10,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "platform": {
+              "type": "string",
+              "enum": [
+                "facebook",
+                "instagram",
+                "youtube",
+                "tiktok",
+                "linkedin",
+                "x"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "maxLength": 1000,
+              "pattern": "^https:\\/\\/",
+              "x-trim": true
+            }
+          },
+          "required": [
+            "platform",
+            "url"
+          ]
+        }
+      },
+      "bankDetails": {
+        "type": "object",
+        "properties": {
+          "accountHolder": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          },
+          "iban": {
+            "type": "string",
+            "maxLength": 50,
+            "x-trim": true
+          },
+          "bic": {
+            "type": "string",
+            "maxLength": 20,
+            "x-trim": true
+          },
+          "bankName": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          },
+          "reference": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            }
+          },
+          "qrImageId": {
+            "type": "string",
+            "maxLength": 64
+          }
+        },
+        "required": [
+          "accountHolder",
+          "iban"
+        ]
+      },
+      "nepalPayments": {
+        "type": "object",
+        "properties": {
+          "esewa": {
+            "type": "object",
+            "properties": {
+              "qrImageId": {
+                "type": "string",
+                "maxLength": 64
+              },
+              "merchantId": {
+                "type": "string",
+                "maxLength": 100
+              }
+            }
+          },
+          "khalti": {
+            "type": "object",
+            "properties": {
+              "qrImageId": {
+                "type": "string",
+                "maxLength": 64
+              },
+              "merchantId": {
+                "type": "string",
+                "maxLength": 100
+              }
+            }
+          }
+        }
+      },
+      "donation": {
+        "type": "object",
+        "properties": {
+          "currency": {
+            "default": "EUR",
+            "type": "string",
+            "enum": [
+              "EUR"
+            ]
+          },
+          "presetAmounts": {
+            "minItems": 1,
+            "maxItems": 6,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            }
+          },
+          "defaultAmount": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100000
+          },
+          "impactNotes": {
+            "default": [],
+            "maxItems": 10,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                "text": {
+                  "type": "object",
+                  "properties": {
+                    "it": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000,
+                      "x-trim": true
+                    },
+                    "en": {
+                      "type": "string",
+                      "maxLength": 2000,
+                      "x-trim": true
+                    }
+                  },
+                  "required": [
+                    "it"
+                  ]
+                }
+              },
+              "required": [
+                "amount",
+                "text"
+              ]
+            }
+          }
+        },
+        "required": [
+          "presetAmounts",
+          "defaultAmount"
+        ]
+      },
+      "impactStats": {
+        "maxItems": 8,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40,
+              "x-trim": true
+            },
+            "value": {
+              "type": "number",
+              "minimum": 0
+            },
+            "suffix": {
+              "type": "string",
+              "maxLength": 8,
+              "x-trim": true
+            },
+            "label": {
+              "type": "object",
+              "properties": {
+                "it": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000,
+                  "x-trim": true
+                },
+                "en": {
+                  "type": "string",
+                  "maxLength": 2000,
+                  "x-trim": true
+                }
+              },
+              "required": [
+                "it"
+              ]
+            },
+            "progress": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "key",
+            "value",
+            "label"
+          ]
+        }
+      },
+      "seo": {
+        "type": "object",
+        "properties": {
+          "titleTemplate": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "defaultTitle": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "defaultDescription": {
+            "type": "object",
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000,
+                "x-trim": true
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 2000,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "it"
+            ]
+          },
+          "ogImageId": {
+            "type": "string",
+            "maxLength": 64
+          }
+        },
+        "required": [
+          "titleTemplate",
+          "defaultTitle",
+          "defaultDescription"
+        ]
+      },
+      "appearance": {
+        "type": "object",
+        "properties": {
+          "headerStyle": {
+            "default": "transparent-on-hero",
+            "type": "string",
+            "enum": [
+              "transparent-on-hero",
+              "solid"
+            ]
+          },
+          "enableMotion": {
+            "default": true,
+            "type": "boolean"
+          },
+          "accent": {
+            "default": "sindoor",
+            "type": "string",
+            "enum": [
+              "sindoor",
+              "marigold",
+              "himalaya"
+            ]
+          },
+          "logoImageId": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "faviconImageId": {
+            "type": "string",
+            "maxLength": 64
+          }
+        }
+      },
+      "analytics": {
+        "type": "object",
+        "properties": {
+          "plausibleDomain": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          },
+          "gaMeasurementId": {
+            "type": "string",
+            "pattern": "^G-[A-Z0-9]{4,20}$",
+            "x-trim": true
+          }
+        }
+      },
+      "formMessages": {
+        "type": "object",
+        "properties": {
+          "contact": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              },
+              "intro": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              }
+            }
+          },
+          "volunteer": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              },
+              "intro": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              }
+            }
+          },
+          "membership": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              },
+              "intro": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              }
+            }
+          },
+          "partner": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              },
+              "intro": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              }
+            }
+          },
+          "newsletter": {
+            "type": "object",
+            "properties": {
+              "success": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              },
+              "intro": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              }
+            }
+          },
+          "donation": {
+            "type": "object",
+            "properties": {
+              "thankYou": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              },
+              "cancelled": {
+                "type": "object",
+                "properties": {
+                  "it": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "x-trim": true
+                  },
+                  "en": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "it"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "features": {
+        "type": "object",
+        "properties": {
+          "demoContent": {
+            "type": "boolean"
+          },
+          "fiveXMille": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "taxCode": {
+                "type": "string",
+                "maxLength": 40
+              }
+            },
+            "required": [
+              "enabled"
+            ]
+          }
+        }
+      }
+    },
+    "required": [
+      "orgName",
+      "organization",
+      "contact",
+      "socialLinks",
+      "bankDetails",
+      "nepalPayments",
+      "donation",
+      "impactStats",
+      "seo",
+      "appearance",
+      "analytics",
+      "formMessages",
+      "features"
+    ]
+  },
+  "socialLinksSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "maxItems": 10,
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": [
+            "facebook",
+            "instagram",
+            "youtube",
+            "tiktok",
+            "linkedin",
+            "x"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "maxLength": 1000,
+          "pattern": "^https:\\/\\/",
+          "x-trim": true
+        }
+      },
+      "required": [
+        "platform",
+        "url"
+      ]
+    }
+  }
+}

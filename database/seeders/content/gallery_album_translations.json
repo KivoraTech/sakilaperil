@@ -1,0 +1,18 @@
+[
+    {
+        "id": "cmurzqe7f001fnn1m4aax8bkk",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "locale": "it",
+        "title": "Il Nepal che amiamo",
+        "slug": "il-nepal-che-amiamo",
+        "description": "Momenti dai villaggi, dalle scuole e dalle montagne."
+    },
+    {
+        "id": "cmurzqe7f001gnn1mndrxfljh",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "locale": "en",
+        "title": "The Nepal we love",
+        "slug": "the-nepal-we-love",
+        "description": "Moments from villages, schools and mountains."
+    }
+]

@@ -1,0 +1,94 @@
+/* Admin rich-text editor typography (scoped to .rt-editor; the public site styles its own output). */
+.rt-editor .rt-editor-content {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  min-height: inherit;
+}
+.rt-editor .rt-editor-content > * + * {
+  margin-top: 0.75em;
+}
+.rt-editor h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 1.2em;
+}
+.rt-editor h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-top: 1em;
+}
+.rt-editor h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1em;
+}
+.rt-editor ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.rt-editor ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+.rt-editor li > p {
+  margin: 0;
+}
+.rt-editor blockquote {
+  border-left: 3px solid var(--color-border, #d4d4d8);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--color-muted-foreground, #52525b);
+}
+.rt-editor a {
+  color: var(--color-primary, #1e3a5f);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.rt-editor hr {
+  border: 0;
+  border-top: 1px solid var(--color-border, #d4d4d8);
+  margin: 1.5rem 0;
+}
+.rt-editor .rt-editor-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.rt-editor .rt-editor-video {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  aspect-ratio: 16 / 9;
+  max-width: 480px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: #101f33;
+  color: #fff;
+}
+.rt-editor .rt-editor-video-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.rt-editor .rt-editor-video-label {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.rt-editor .ProseMirror-selectednode {
+  outline: 3px solid var(--color-ring, #3b82f6);
+  outline-offset: 2px;
+}
+.rt-editor p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #a1a1aa;
+  float: left;
+  height: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,15 @@
+{{--
+    Port of app/preview/[locale]/projects/[id]/page.tsx: the SAVED draft of a project with the public
+    site's chrome and components. Params: $project (ProjectDetail + status), $locale, $meta, $banner.
+--}}
+@extends('layouts.site')
+
+@push('body-start')
+    @include('preview.content.banner')
+@endpush
+
+@section('content')
+@php($stage = \App\View\Cards::STAGE_TONE[$project['stage']])
+<div class="surface-cream pt-10 pb-12 md:pb-16"><x-site.container><div class="grid gap-8 lg:grid-cols-12 lg:gap-10"><div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-sand shadow-raised lg:col-span-7 lg:aspect-auto lg:min-h-[28rem]">{{ \App\View\Img::media($project['coverImage'], '(min-width: 1024px) 58vw, 100vw', priority: true) }}</div><div class="flex flex-col rounded-lg bg-white p-6 shadow-card ring-1 ring-line/70 md:p-8 lg:col-span-5"><div class="flex flex-wrap gap-2">@if ($project['sector'])@include('site.ui.chip', ['slot' => $project['sector']])@endif @include('site.ui.chip', ['tone' => 'sage', 'dot' => $stage['dot'], 'slot' => t('status.'.$stage['key'])])</div><h1 class="mt-4 font-display text-h1 font-semibold text-heading">{{ $project['title'] }}</h1>@if ($project['summary'])<p class="mt-4 text-lead text-fg-muted">{{ \App\View\Ui::todoText($project['summary']) }}</p>@endif<dl class="mt-6 grid gap-3 text-small sm:grid-cols-2">@if ($project['district'])<div class="flex items-start gap-2">{!! \App\View\Icon::svg('MapPin', 'mt-0.5 size-4 shrink-0 text-sindoor') !!}<div><dt class="text-fg-muted">{{ t('projects.district') }}</dt><dd class="font-semibold text-fg">{{ $project['district'] }}</dd></div></div>@endif @if ($project['startDate'])<div class="flex items-start gap-2">{!! \App\View\Icon::svg('CalendarDays', 'mt-0.5 size-4 shrink-0 text-sindoor') !!}<div><dt class="text-fg-muted">{{ t('projects.started') }}</dt><dd class="font-semibold text-fg">{{ \App\I18n\Format::date($project['startDate'], $locale, ['month' => 'long', 'year' => 'numeric']) }}</dd></div></div>@endif @if ($project['metaLine'])<div class="flex items-start gap-2 sm:col-span-2">{!! \App\View\Icon::svg('Target', 'mt-0.5 size-4 shrink-0 text-sindoor') !!}<div><dt class="text-fg-muted">{{ t('projects.keyFact') }}</dt><dd class="font-semibold text-fg">{{ $project['metaLine'] }}</dd></div></div>@endif</dl>@if ($project['goalAmount'])@include('site.ui.progress-bar', ['class' => 'mt-6', 'raised' => $project['raisedAmount'] ?? 0, 'goal' => $project['goalAmount'], 'currency' => $project['currency'], 'locale' => $locale])@endif</div></div></x-site.container></div><x-site.section><x-site.container size="prose">@include('preview.content.fallback-note', ['show' => $project['isFallback']])<div @if ($project['isFallback']) lang="it" @endif class="{{ $project['isFallback'] ? 'mt-6' : '' }}">@if (! empty($project['body']['content']))
+{{ \App\View\SiteRichText::content($project['body']) }}@else<p class="text-fg-muted">{{ t('projects.noBody') }}</p>@endif</div></x-site.container></x-site.section>
+@endsection

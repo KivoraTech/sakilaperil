@@ -1,0 +1,38 @@
+{
+  "localizedString": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "it": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2000,
+        "x-trim": true
+      },
+      "en": {
+        "type": "string",
+        "maxLength": 2000,
+        "x-trim": true
+      }
+    },
+    "required": [
+      "it"
+    ]
+  },
+  "optionalLocalizedString": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "it": {
+        "type": "string",
+        "maxLength": 2000,
+        "x-trim": true
+      },
+      "en": {
+        "type": "string",
+        "maxLength": 2000,
+        "x-trim": true
+      }
+    }
+  }
+}

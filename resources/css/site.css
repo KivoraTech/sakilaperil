@@ -1,0 +1,21 @@
+/*
+ * Public-site stylesheet: Tailwind generates utilities ONLY for the files that render public pages,
+ * so visitors do not download the admin's (shadcn/Inertia) utilities. About half the size of app.css.
+ * A new place that outputs public markup must be added to the @source list below.
+ */
+@import "tailwindcss" source(none);
+@source "../views/site";
+@source "../views/layouts";
+@source "../views/errors";
+@source "../views/partials";
+@source "../views/preview";
+@source "../views/engagement";
+@source "../views/components/site";
+@source "../js/site";
+@source "../js/site.ts";
+@source "../js/preview-bridge.ts";
+@source "../../app/View";
+@source "../../app/Engagement";
+@source "../../app/RichText";
+@source "../../app/Http/Controllers/Site";
+@import "./core.css";

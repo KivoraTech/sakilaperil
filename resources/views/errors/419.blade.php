@@ -1,0 +1,5 @@
+@extends('errors.minimal')
+@section('code', 'Sessione scaduta')
+@section('title_it', 'La pagina è scaduta')
+@section('body_it', 'Ricarica la pagina e riprova.')
+@section('body_en', 'This page expired. Please reload and try again.')

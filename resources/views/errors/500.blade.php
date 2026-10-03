@@ -1,0 +1,5 @@
+@extends('errors.minimal')
+@section('code', 'Errore 500')
+@section('title_it', 'Qualcosa è andato storto')
+@section('body_it', "Ci scusiamo per l'inconveniente. Riprova tra qualche istante.")
+@section('body_en', 'Something went wrong on our side. Please try again in a moment.')

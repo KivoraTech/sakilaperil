@@ -1,0 +1,362 @@
+[
+    {
+        "id": "cmurzqe9e0044nn1m3e86tr63",
+        "navigationId": "cmurzqe9d0043nn1mpfcj4wuo",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Chi siamo",
+                "en": "About us"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 0,
+        "createdAt": "2026-10-03 06:08:05.042",
+        "updatedAt": "2026-10-03 06:08:05.042"
+    },
+    {
+        "id": "cmurzqe9e0045nn1mmxz0e62x",
+        "navigationId": "cmurzqe9d0043nn1mpfcj4wuo",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Progetti",
+                "en": "Projects"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "projects",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 1,
+        "createdAt": "2026-10-03 06:08:05.042",
+        "updatedAt": "2026-10-03 06:08:05.042"
+    },
+    {
+        "id": "cmurzqe9f0046nn1m7kmlcy6f",
+        "navigationId": "cmurzqe9d0043nn1mpfcj4wuo",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Notizie",
+                "en": "News"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "news",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 2,
+        "createdAt": "2026-10-03 06:08:05.043",
+        "updatedAt": "2026-10-03 06:08:05.043"
+    },
+    {
+        "id": "cmurzqe9g0047nn1mdhxpfngo",
+        "navigationId": "cmurzqe9d0043nn1mpfcj4wuo",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Eventi",
+                "en": "Events"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "events",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 3,
+        "createdAt": "2026-10-03 06:08:05.044",
+        "updatedAt": "2026-10-03 06:08:05.044"
+    },
+    {
+        "id": "cmurzqe9g0048nn1mk8sgekre",
+        "navigationId": "cmurzqe9d0043nn1mpfcj4wuo",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Galleria",
+                "en": "Gallery"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "gallery",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 4,
+        "createdAt": "2026-10-03 06:08:05.044",
+        "updatedAt": "2026-10-03 06:08:05.044"
+    },
+    {
+        "id": "cmurzqe9h0049nn1my3eq2xh8",
+        "navigationId": "cmurzqe9d0043nn1mpfcj4wuo",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Trasparenza",
+                "en": "Transparency"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe8w003bnn1m6r44chef",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 5,
+        "createdAt": "2026-10-03 06:08:05.045",
+        "updatedAt": "2026-10-03 06:08:05.045"
+    },
+    {
+        "id": "cmurzqe9i004ann1m13iqxx5u",
+        "navigationId": "cmurzqe9d0043nn1mpfcj4wuo",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Contatti",
+                "en": "Contact"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe90003inn1m0wlzo5aq",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 6,
+        "createdAt": "2026-10-03 06:08:05.046",
+        "updatedAt": "2026-10-03 06:08:05.046"
+    },
+    {
+        "id": "cmurzqe9j004cnn1m8u15r6qs",
+        "navigationId": "cmurzqe9i004bnn1mpmesnq78",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Chi siamo",
+                "en": "About us"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe8i002rnn1mrfmrbkpg",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 0,
+        "createdAt": "2026-10-03 06:08:05.047",
+        "updatedAt": "2026-10-03 06:08:05.047"
+    },
+    {
+        "id": "cmurzqe9j004dnn1maroufeij",
+        "navigationId": "cmurzqe9i004bnn1mpmesnq78",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Progetti",
+                "en": "Projects"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "projects",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 1,
+        "createdAt": "2026-10-03 06:08:05.047",
+        "updatedAt": "2026-10-03 06:08:05.047"
+    },
+    {
+        "id": "cmurzqe9k004enn1mj4lod799",
+        "navigationId": "cmurzqe9i004bnn1mpmesnq78",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Notizie e storie",
+                "en": "News & stories"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "news",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 2,
+        "createdAt": "2026-10-03 06:08:05.048",
+        "updatedAt": "2026-10-03 06:08:05.048"
+    },
+    {
+        "id": "cmurzqe9l004fnn1mt2gsnp96",
+        "navigationId": "cmurzqe9i004bnn1mpmesnq78",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Galleria",
+                "en": "Gallery"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "gallery",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 3,
+        "createdAt": "2026-10-03 06:08:05.049",
+        "updatedAt": "2026-10-03 06:08:05.049"
+    },
+    {
+        "id": "cmurzqe9l004gnn1mxd1zx7vq",
+        "navigationId": "cmurzqe9i004bnn1mpmesnq78",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Trasparenza",
+                "en": "Transparency"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe8w003bnn1m6r44chef",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 4,
+        "createdAt": "2026-10-03 06:08:05.049",
+        "updatedAt": "2026-10-03 06:08:05.049"
+    },
+    {
+        "id": "cmurzqe9m004inn1mlmn5usan",
+        "navigationId": "cmurzqe9m004hnn1m6eiduhgi",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Dona ora",
+                "en": "Donate now"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "donate",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 0,
+        "createdAt": "2026-10-03 06:08:05.050",
+        "updatedAt": "2026-10-03 06:08:05.050"
+    },
+    {
+        "id": "cmurzqe9n004jnn1mk8izpfz4",
+        "navigationId": "cmurzqe9m004hnn1m6eiduhgi",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Partecipa",
+                "en": "Get involved"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe8q0032nn1m9nxrwbjq",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 1,
+        "createdAt": "2026-10-03 06:08:05.051",
+        "updatedAt": "2026-10-03 06:08:05.051"
+    },
+    {
+        "id": "cmurzqe9n004knn1mhiiti2dy",
+        "navigationId": "cmurzqe9m004hnn1m6eiduhgi",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Eventi",
+                "en": "Events"
+            }
+        },
+        "linkType": "ROUTE",
+        "pageId": null,
+        "routeKey": "events",
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 2,
+        "createdAt": "2026-10-03 06:08:05.051",
+        "updatedAt": "2026-10-03 06:08:05.051"
+    },
+    {
+        "id": "cmurzqe9o004lnn1m2jwldik8",
+        "navigationId": "cmurzqe9m004hnn1m6eiduhgi",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Contatti",
+                "en": "Contact"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe90003inn1m0wlzo5aq",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 3,
+        "createdAt": "2026-10-03 06:08:05.052",
+        "updatedAt": "2026-10-03 06:08:05.052"
+    },
+    {
+        "id": "cmurzqe9p004nnn1mkchv0lg4",
+        "navigationId": "cmurzqe9o004mnn1mpx9nin0o",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Privacy",
+                "en": "Privacy"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe94003pnn1mmv66o3cj",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 0,
+        "createdAt": "2026-10-03 06:08:05.053",
+        "updatedAt": "2026-10-03 06:08:05.053"
+    },
+    {
+        "id": "cmurzqe9p004onn1mx63iay0l",
+        "navigationId": "cmurzqe9o004mnn1mpx9nin0o",
+        "parentId": null,
+        "label": {
+            "__json": {
+                "it": "Cookie",
+                "en": "Cookies"
+            }
+        },
+        "linkType": "PAGE",
+        "pageId": "cmurzqe98003wnn1muxilp845",
+        "routeKey": null,
+        "href": null,
+        "openInNewTab": 0,
+        "isVisible": 1,
+        "position": 1,
+        "createdAt": "2026-10-03 06:08:05.053",
+        "updatedAt": "2026-10-03 06:08:05.053"
+    }
+]

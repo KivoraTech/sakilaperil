@@ -1,0 +1,56 @@
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+!.env.production.example
+# Generated production settings (scripts/make-env.php) and any other env file: secrets, never commit.
+*.env
+sakila*.env
+*.env.bak*
+# Raw material from the client (email, documents, original photos). The photos the site uses are
+# copied to database/content/photos; the originals stay out of the repository.
+/assets/
+# Notes, reports and guides are kept locally only: no markdown in the repository.
+*.md
+# Local tooling files and prompts.
+.claude/
+.claude.json
+CLAUDE.md
+AGENTS.md
+.mcp.json
+.cursor/
+.cursorrules
+.kilo/
+.aider*
+prompts/
+*.prompt
+*.prompt.*
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
+Thumbs.db
+
+/test-results
+/playwright-report
+/storage/e2e-uploads
+/storage/uploads
+/dist
+/storage/app/img-cache
+/.e2e-logs
+/tests/deploy/tmp

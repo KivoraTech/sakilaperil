@@ -1,0 +1,5 @@
+@extends('errors.minimal')
+@section('code', 'Manutenzione')
+@section('title_it', 'Stiamo aggiornando il sito')
+@section('body_it', 'Torniamo online tra pochi minuti.')
+@section('body_en', 'We are updating the website — back in a few minutes.')

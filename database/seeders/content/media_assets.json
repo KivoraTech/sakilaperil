@@ -1,0 +1,422 @@
+[
+    {
+        "id": "cmurzqe6e0000nn1mwomnkl8m",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/annapurna",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Mt._Annapurna_Sunrise.jpg/1920px-Mt._Annapurna_Sunrise.jpg",
+        "filename": "1920px-Mt._Annapurna_Sunrise.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 1920,
+        "height": 1277,
+        "alt": {
+            "__json": {
+                "it": "L'alba dorata sulla catena dell'Annapurna, Nepal",
+                "en": "Golden sunrise over the Annapurna range, Nepal"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.934",
+        "updatedAt": "2026-10-03 06:08:04.934"
+    },
+    {
+        "id": "cmurzqe6g0001nn1mhruq7kjs",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/balthali",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Beautiful_Balthali_Village.jpg/1920px-Beautiful_Balthali_Village.jpg",
+        "filename": "1920px-Beautiful_Balthali_Village.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 1920,
+        "height": 1263,
+        "alt": {
+            "__json": {
+                "it": "Il villaggio di Balthali tra colline terrazzate",
+                "en": "Balthali village among terraced hills"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.936",
+        "updatedAt": "2026-10-03 06:08:04.936"
+    },
+    {
+        "id": "cmurzqe6h0002nn1moxr5xwav",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/children",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Smiling_Children_%283965280057%29.jpg",
+        "filename": "Smiling_Children_(3965280057).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 1200,
+        "height": 800,
+        "alt": {
+            "__json": {
+                "it": "Bambini nepalesi sorridenti",
+                "en": "Smiling Nepali children"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.937",
+        "updatedAt": "2026-10-03 06:08:04.937"
+    },
+    {
+        "id": "cmurzqe6i0003nn1mk0q6m8va",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/school",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Happy_to_be_back_in_school_%288424386762%29.jpg/960px-Happy_to_be_back_in_school_%288424386762%29.jpg",
+        "filename": "960px-Happy_to_be_back_in_school_(8424386762).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 639,
+        "alt": {
+            "__json": {
+                "it": "Studenti in uniforme in un'aula in Nepal",
+                "en": "Students in uniform in a classroom in Nepal"
+            }
+        },
+        "caption": null,
+        "credit": "UK DFID, CC BY 2.0 (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.938",
+        "updatedAt": "2026-10-03 06:08:04.938"
+    },
+    {
+        "id": "cmurzqe6i0004nn1m33e8ritf",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/clinic",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/District_Public_Health_Office%2C_Immunisation_Clinic%2C_Pokhara%2C_Nepal._%2810693221543%29.jpg/960px-District_Public_Health_Office%2C_Immunisation_Clinic%2C_Pokhara%2C_Nepal._%2810693221543%29.jpg",
+        "filename": "960px-District_Public_Health_Office,_Immunisation_Clinic,_Pokhara,_Nepal._(10693221543).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 640,
+        "alt": {
+            "__json": {
+                "it": "Una clinica per le vaccinazioni a Pokhara",
+                "en": "An immunisation clinic in Pokhara"
+            }
+        },
+        "caption": null,
+        "credit": "Jim Holmes/AusAID & DFAT, CC BY 2.0 (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.938",
+        "updatedAt": "2026-10-03 06:08:04.938"
+    },
+    {
+        "id": "cmurzqe6j0005nn1mkx40ygeu",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/house",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Talking_about_use_of_wood_in_new_house.jpg/960px-Talking_about_use_of_wood_in_new_house.jpg",
+        "filename": "960px-Talking_about_use_of_wood_in_new_house.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 1440,
+        "alt": {
+            "__json": {
+                "it": "Una famiglia e un tecnico discutono la costruzione di una nuova casa",
+                "en": "A family and a technician discuss building a new house"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.939",
+        "updatedAt": "2026-10-03 06:08:04.939"
+    },
+    {
+        "id": "cmurzqe6l0006nn1mmguzydtt",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/terraces",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Terrace_Farming_in_Chamunda_VDC_of_Dailekh.jpg/960px-Terrace_Farming_in_Chamunda_VDC_of_Dailekh.jpg",
+        "filename": "960px-Terrace_Farming_in_Chamunda_VDC_of_Dailekh.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 720,
+        "alt": {
+            "__json": {
+                "it": "Campi terrazzati a Dailekh",
+                "en": "Terraced fields in Dailekh"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.941",
+        "updatedAt": "2026-10-03 06:08:04.941"
+    },
+    {
+        "id": "cmurzqe6m0007nn1mjsk84sxv",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/prayerFlags",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/The_prayer_flags_perfecty_blends_with_the_mountains.jpg",
+        "filename": "The_prayer_flags_perfecty_blends_with_the_mountains.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 1920,
+        "height": 1280,
+        "alt": {
+            "__json": {
+                "it": "Bandiere di preghiera davanti alle montagne",
+                "en": "Prayer flags in front of the mountains"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.942",
+        "updatedAt": "2026-10-03 06:08:04.942"
+    },
+    {
+        "id": "cmurzqe6m0008nn1moozboro6",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/farmhouse",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/A_farmer%2C_his_house_and_his_field.jpg/1280px-A_farmer%2C_his_house_and_his_field.jpg",
+        "filename": "1280px-A_farmer,_his_house_and_his_field.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 1280,
+        "height": 720,
+        "alt": {
+            "__json": {
+                "it": "Una casa rurale tra i campi di riso",
+                "en": "A rural house among rice fields"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.942",
+        "updatedAt": "2026-10-03 06:08:04.942"
+    },
+    {
+        "id": "cmurzqe6n0009nn1m1ydpeyf6",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/boudhanath",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Pilgrims_at_Boudhanath_01.jpg/960px-Pilgrims_at_Boudhanath_01.jpg",
+        "filename": "960px-Pilgrims_at_Boudhanath_01.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 640,
+        "alt": {
+            "__json": {
+                "it": "Pellegrini allo stupa di Boudhanath",
+                "en": "Pilgrims at Boudhanath stupa"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.943",
+        "updatedAt": "2026-10-03 06:08:04.943"
+    },
+    {
+        "id": "cmurzqe6o000ann1mj2orezll",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/newSchool",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/New_school_building_brings_hope_for_the_community_%288423294567%29.jpg/960px-New_school_building_brings_hope_for_the_community_%288423294567%29.jpg",
+        "filename": "960px-New_school_building_brings_hope_for_the_community_(8423294567).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 640,
+        "alt": {
+            "__json": {
+                "it": "Il nuovo edificio scolastico",
+                "en": "The new school building"
+            }
+        },
+        "caption": null,
+        "credit": "UK DFID, CC BY 2.0 (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.944",
+        "updatedAt": "2026-10-03 06:08:04.944"
+    },
+    {
+        "id": "cmurzqe6o000bnn1myh35kg1n",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/motherChild",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Unnamed_mother_and_child_visit_the_temporary_Batulechaur_Health_Post_in_Pokhara%2C_Nepal_for_treatment_%2810686910263%29.jpg/960px-Unnamed_mother_and_child_visit_the_temporary_Batulechaur_Health_Post_in_Pokhara%2C_Nepal_for_treatment_%2810686910263%29.jpg",
+        "filename": "960px-Unnamed_mother_and_child_visit_the_temporary_Batulechaur_Health_Post_in_Pokhara,_Nepal_for_treatment_(10686910263).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 640,
+        "alt": {
+            "__json": {
+                "it": "Una mamma e il suo bambino a un presidio sanitario",
+                "en": "A mother and child at a health post"
+            }
+        },
+        "caption": null,
+        "credit": "Jim Holmes/AusAID & DFAT, CC BY 2.0 (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.944",
+        "updatedAt": "2026-10-03 06:08:04.944"
+    },
+    {
+        "id": "cmurzqe6p000cnn1m0b78i0ko",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/sindhupalchok",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Sindhupalchok%2C_Nepal.jpg/960px-Sindhupalchok%2C_Nepal.jpg",
+        "filename": "960px-Sindhupalchok,_Nepal.jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 640,
+        "alt": {
+            "__json": {
+                "it": "Paesaggio del distretto di Sindhupalchok",
+                "en": "Landscape of Sindhupalchok district"
+            }
+        },
+        "caption": null,
+        "credit": "Wikimedia Commons (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.945",
+        "updatedAt": "2026-10-03 06:08:04.945"
+    },
+    {
+        "id": "cmurzqe6p000dnn1miyofdsid",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/swayambhu",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Prayer_flags_hung_by_the_stairs_leading_to_Swayambhunath_%2817850740075%29.jpg/960px-Prayer_flags_hung_by_the_stairs_leading_to_Swayambhunath_%2817850740075%29.jpg",
+        "filename": "960px-Prayer_flags_hung_by_the_stairs_leading_to_Swayambhunath_(17850740075).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 640,
+        "alt": {
+            "__json": {
+                "it": "Bandiere di preghiera a Swayambhunath",
+                "en": "Prayer flags at Swayambhunath"
+            }
+        },
+        "caption": null,
+        "credit": "Jorge Láscar, CC BY 2.0 (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.945",
+        "updatedAt": "2026-10-03 06:08:04.945"
+    },
+    {
+        "id": "cmurzqe6q000enn1mb3n56gzj",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/safeLearning",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Better_quality_learning_in_a_safe_environment_%288423292169%29.jpg/960px-Better_quality_learning_in_a_safe_environment_%288423292169%29.jpg",
+        "filename": "960px-Better_quality_learning_in_a_safe_environment_(8423292169).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 658,
+        "alt": {
+            "__json": {
+                "it": "Bambini che imparano in un'aula sicura",
+                "en": "Children learning in a safe classroom"
+            }
+        },
+        "caption": null,
+        "credit": "UK DFID, CC BY 2.0 (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.946",
+        "updatedAt": "2026-10-03 06:08:04.946"
+    },
+    {
+        "id": "cmurzqe6r000fnn1mlnxn4t0s",
+        "kind": "IMAGE",
+        "storageDriver": "external",
+        "storageKey": "external/safeEnv",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/A_safe_environment_to_learn_%288424388480%29.jpg/960px-A_safe_environment_to_learn_%288424388480%29.jpg",
+        "filename": "960px-A_safe_environment_to_learn_(8424388480).jpg",
+        "mimeType": "image/jpeg",
+        "size": 0,
+        "width": 960,
+        "height": 640,
+        "alt": {
+            "__json": {
+                "it": "Un ambiente sicuro per imparare",
+                "en": "A safe environment to learn"
+            }
+        },
+        "caption": null,
+        "credit": "UK DFID, CC BY 2.0 (demo)",
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.947",
+        "updatedAt": "2026-10-03 06:08:04.947"
+    },
+    {
+        "id": "cmurzqe6t000gnn1mi6izh6cl",
+        "kind": "DOCUMENT",
+        "storageDriver": "local",
+        "storageKey": "seed/placeholder-annual-report.pdf",
+        "url": "/uploads/seed/placeholder-annual-report.pdf",
+        "filename": "placeholder-annual-report.pdf",
+        "mimeType": "application/pdf",
+        "size": 652,
+        "width": null,
+        "height": null,
+        "alt": null,
+        "caption": null,
+        "credit": null,
+        "focalX": null,
+        "focalY": null,
+        "uploadedById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.949",
+        "updatedAt": "2026-10-03 06:08:04.949"
+    }
+]

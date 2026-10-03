@@ -1,0 +1,156 @@
+{
+  "richTextDocSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "const": "doc"
+      },
+      "content": {
+        "default": [],
+        "maxItems": 2000,
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/__schema0"
+        }
+      }
+    },
+    "required": [
+      "type"
+    ],
+    "$defs": {
+      "__schema0": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "attrs": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {}
+          },
+          "content": {
+            "maxItems": 2000,
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/__schema0"
+            }
+          },
+          "marks": {
+            "maxItems": 20,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "maxLength": 50
+                },
+                "attrs": {
+                  "type": "object",
+                  "propertyNames": {
+                    "type": "string"
+                  },
+                  "additionalProperties": {}
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "required": [
+          "type"
+        ]
+      }
+    }
+  },
+  "richTextInput": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "const": "doc"
+      },
+      "content": {
+        "default": [],
+        "maxItems": 2000,
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/__schema0"
+        }
+      }
+    },
+    "required": [
+      "type"
+    ],
+    "$defs": {
+      "__schema0": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "attrs": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {}
+          },
+          "content": {
+            "maxItems": 2000,
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/__schema0"
+            }
+          },
+          "marks": {
+            "maxItems": 20,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "maxLength": 50
+                },
+                "attrs": {
+                  "type": "object",
+                  "propertyNames": {
+                    "type": "string"
+                  },
+                  "additionalProperties": {}
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "required": [
+          "type"
+        ]
+      }
+    }
+  }
+}

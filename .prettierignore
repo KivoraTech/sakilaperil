@@ -1,0 +1,8 @@
+public/build
+vendor
+node_modules
+resources/schemas
+resources/css/vendor
+resources/fonts
+storage
+resources/js/components/ui

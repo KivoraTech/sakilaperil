@@ -1,0 +1,38 @@
+[
+    {
+        "id": "cmurzqe75000znn1mo91aevhk",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-09-12 09:00:00.000",
+        "coverImageId": "cmurzqe6o000ann1mj2orezll",
+        "categoryId": "cmurzqe71000qnn1mj17jcwbr",
+        "projectId": "cmurzqe6x000hnn1mxqhuiqii",
+        "authorId": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "isFeatured": 0,
+        "createdAt": "2026-10-03 06:08:04.961",
+        "updatedAt": "2026-10-03 06:08:04.961"
+    },
+    {
+        "id": "cmurzqe770012nn1mxiqxpy87",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-08-28 09:00:00.000",
+        "coverImageId": "cmurzqe6i0004nn1m33e8ritf",
+        "categoryId": "cmurzqe71000qnn1mj17jcwbr",
+        "projectId": "cmurzqe6z000knn1m47h3cf6i",
+        "authorId": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "isFeatured": 0,
+        "createdAt": "2026-10-03 06:08:04.963",
+        "updatedAt": "2026-10-03 06:08:04.963"
+    },
+    {
+        "id": "cmurzqe780015nn1mysf32de2",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-07-15 09:00:00.000",
+        "coverImageId": "cmurzqe6p000dnn1miyofdsid",
+        "categoryId": "cmurzqe72000tnn1m2q2pvx08",
+        "projectId": null,
+        "authorId": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "isFeatured": 0,
+        "createdAt": "2026-10-03 06:08:04.964",
+        "updatedAt": "2026-10-03 06:08:04.964"
+    }
+]

@@ -1,0 +1,516 @@
+{
+  "createPageSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160,
+        "x-trim": true
+      },
+      "slug": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "x-trim": true,
+        "x-lowercase": true
+      },
+      "enTitle": {
+        "type": "string",
+        "maxLength": 160,
+        "x-trim": true
+      },
+      "enSlug": {
+        "type": "string",
+        "maxLength": 80,
+        "x-trim": true,
+        "x-lowercase": true
+      }
+    },
+    "required": [
+      "title",
+      "slug"
+    ]
+  },
+  "createTranslationSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "pageId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "locale": {
+        "type": "string",
+        "enum": [
+          "it",
+          "en"
+        ]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160,
+        "x-trim": true
+      },
+      "slug": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "x-trim": true,
+        "x-lowercase": true
+      },
+      "copyFrom": {
+        "type": "string",
+        "enum": [
+          "it",
+          "en"
+        ]
+      }
+    },
+    "required": [
+      "pageId",
+      "locale",
+      "title",
+      "slug"
+    ]
+  },
+  "deletePageSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "pageId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      }
+    },
+    "required": [
+      "pageId"
+    ]
+  },
+  "draftSectionSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "hero",
+          "richText",
+          "image",
+          "imageText",
+          "quote",
+          "cta",
+          "gallery",
+          "services",
+          "impactStats",
+          "testimonials",
+          "faq",
+          "newsList",
+          "donateCta",
+          "team",
+          "partners",
+          "timeline",
+          "newsletter",
+          "contact",
+          "reportsList",
+          "involveForms",
+          "spacer",
+          "marquee"
+        ]
+      },
+      "isVisible": {
+        "type": "boolean"
+      },
+      "content": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {}
+      },
+      "settings": {
+        "default": {},
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {}
+      }
+    },
+    "required": [
+      "type",
+      "isVisible",
+      "content"
+    ]
+  },
+  "idSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 64
+  },
+  "listPagesSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "q": {
+        "type": "string",
+        "maxLength": 100,
+        "x-trim": true
+      },
+      "status": {
+        "default": "all",
+        "type": "string",
+        "enum": [
+          "all",
+          "published",
+          "draft",
+          "changes"
+        ]
+      },
+      "page": {
+        "default": 1,
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10000
+      }
+    }
+  },
+  "localeSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "string",
+    "enum": [
+      "it",
+      "en"
+    ]
+  },
+  "pageLocaleSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "pageId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "locale": {
+        "type": "string",
+        "enum": [
+          "it",
+          "en"
+        ]
+      }
+    },
+    "required": [
+      "pageId",
+      "locale"
+    ]
+  },
+  "pageMetaSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "pageId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "locale": {
+        "type": "string",
+        "enum": [
+          "it",
+          "en"
+        ]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160,
+        "x-trim": true
+      },
+      "slug": {
+        "type": "string",
+        "maxLength": 80,
+        "x-trim": true,
+        "x-lowercase": true
+      },
+      "seoTitle": {
+        "type": "string",
+        "maxLength": 70,
+        "x-trim": true
+      },
+      "seoDescription": {
+        "type": "string",
+        "maxLength": 160,
+        "x-trim": true
+      },
+      "ogImageId": {
+        "type": "string",
+        "maxLength": 64,
+        "x-trim": true
+      },
+      "noIndex": {
+        "default": false,
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "pageId",
+      "locale",
+      "title",
+      "slug"
+    ]
+  },
+  "pageTitleSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 160,
+    "x-trim": true
+  },
+  "previewClientIdSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "string",
+    "pattern": "^[A-Za-z0-9_-]{8,64}$"
+  },
+  "publishPageSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "pageId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "locale": {
+        "type": "string",
+        "enum": [
+          "it",
+          "en"
+        ]
+      },
+      "confirmEmpty": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "pageId",
+      "locale"
+    ]
+  },
+  "saveSectionsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "pageId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "locale": {
+        "type": "string",
+        "enum": [
+          "it",
+          "en"
+        ]
+      },
+      "sections": {
+        "maxItems": 60,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "hero",
+                "richText",
+                "image",
+                "imageText",
+                "quote",
+                "cta",
+                "gallery",
+                "services",
+                "impactStats",
+                "testimonials",
+                "faq",
+                "newsList",
+                "donateCta",
+                "team",
+                "partners",
+                "timeline",
+                "newsletter",
+                "contact",
+                "reportsList",
+                "involveForms",
+                "spacer",
+                "marquee"
+              ]
+            },
+            "isVisible": {
+              "type": "boolean"
+            },
+            "content": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {}
+            },
+            "settings": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {}
+            }
+          },
+          "required": [
+            "type",
+            "isVisible",
+            "content"
+          ]
+        }
+      },
+      "expectedVersion": {
+        "type": "string",
+        "maxLength": 40
+      }
+    },
+    "required": [
+      "pageId",
+      "locale",
+      "sections"
+    ]
+  },
+  "slugSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 80,
+    "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+    "x-trim": true,
+    "x-lowercase": true
+  },
+  "stagePreviewSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "pageId": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "locale": {
+        "type": "string",
+        "enum": [
+          "it",
+          "en"
+        ]
+      },
+      "clientId": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_-]{8,64}$"
+      },
+      "title": {
+        "default": "",
+        "type": "string",
+        "maxLength": 160,
+        "x-trim": true
+      },
+      "sections": {
+        "maxItems": 60,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "hero",
+                "richText",
+                "image",
+                "imageText",
+                "quote",
+                "cta",
+                "gallery",
+                "services",
+                "impactStats",
+                "testimonials",
+                "faq",
+                "newsList",
+                "donateCta",
+                "team",
+                "partners",
+                "timeline",
+                "newsletter",
+                "contact",
+                "reportsList",
+                "involveForms",
+                "spacer",
+                "marquee"
+              ]
+            },
+            "isVisible": {
+              "type": "boolean"
+            },
+            "content": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {}
+            },
+            "settings": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {}
+            },
+            "key": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            }
+          },
+          "required": [
+            "type",
+            "isVisible",
+            "content",
+            "key"
+          ]
+        }
+      }
+    },
+    "required": [
+      "pageId",
+      "locale",
+      "clientId",
+      "sections"
+    ]
+  }
+}

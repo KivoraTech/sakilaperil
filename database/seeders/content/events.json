@@ -1,0 +1,38 @@
+[
+    {
+        "id": "cmurzqe7a0018nn1mvp6fwdgb",
+        "status": "PUBLISHED",
+        "startsAt": "2026-11-02 19:00:00.000",
+        "endsAt": "2026-11-02 22:00:00.000",
+        "allDay": 0,
+        "timezone": "Europe/Rome",
+        "address": null,
+        "mapUrl": null,
+        "onlineUrl": null,
+        "registrationUrl": null,
+        "coverImageId": "cmurzqe6p000dnn1miyofdsid",
+        "isFeatured": 0,
+        "publishedAt": "2026-10-03 06:08:04.965",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.966",
+        "updatedAt": "2026-10-03 06:08:04.966"
+    },
+    {
+        "id": "cmurzqe7c001bnn1m5ob9uk2q",
+        "status": "PUBLISHED",
+        "startsAt": "2026-12-02 18:00:00.000",
+        "endsAt": null,
+        "allDay": 0,
+        "timezone": "Europe/Rome",
+        "address": null,
+        "mapUrl": null,
+        "onlineUrl": null,
+        "registrationUrl": null,
+        "coverImageId": "cmurzqe6p000cnn1m0b78i0ko",
+        "isFeatured": 0,
+        "publishedAt": "2026-10-03 06:08:04.967",
+        "createdById": "f2de6878-6809-4a9e-87e8-8f87a724d3c8",
+        "createdAt": "2026-10-03 06:08:04.968",
+        "updatedAt": "2026-10-03 06:08:04.968"
+    }
+]

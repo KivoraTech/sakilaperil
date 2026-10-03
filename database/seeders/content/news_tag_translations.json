@@ -1,0 +1,16 @@
+[
+    {
+        "id": "cmurzqe74000xnn1m6s3zcib6",
+        "tagId": "cmurzqe73000wnn1mx2v1m0mj",
+        "locale": "it",
+        "name": "Dal campo",
+        "slug": "dal-campo"
+    },
+    {
+        "id": "cmurzqe74000ynn1mgvfteok6",
+        "tagId": "cmurzqe73000wnn1mx2v1m0mj",
+        "locale": "en",
+        "name": "From the field",
+        "slug": "from-the-field"
+    }
+]

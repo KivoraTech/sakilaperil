@@ -1,0 +1,2439 @@
+{
+  "types": {
+    "hero": {
+      "label": "Hero",
+      "description": "Full-width opening image with headline and buttons",
+      "category": "hero",
+      "version": 1,
+      "singleton": true,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Titolo",
+          "image": {
+            "assetId": ""
+          }
+        },
+        "settings": {
+          "height": "full",
+          "overlay": "dark"
+        }
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "subheading": {
+            "type": "string",
+            "maxLength": 400,
+            "x-trim": true
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "alt": {
+                "type": "string",
+                "maxLength": 300,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "assetId"
+            ]
+          },
+          "primaryCta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          },
+          "secondaryCta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          },
+          "highlightProjectId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        },
+        "required": [
+          "heading",
+          "image"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "height": {
+            "default": "full",
+            "type": "string",
+            "enum": [
+              "full",
+              "large",
+              "medium"
+            ]
+          },
+          "overlay": {
+            "default": "dark",
+            "type": "string",
+            "enum": [
+              "dark",
+              "medium",
+              "light"
+            ]
+          }
+        }
+      }
+    },
+    "richText": {
+      "label": "Rich text",
+      "description": "Formatted text with headings, lists and links",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "body": {
+            "type": "doc",
+            "content": []
+          }
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "body": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "doc"
+              },
+              "content": {
+                "default": [],
+                "maxItems": 2000,
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/__schema0"
+                }
+              }
+            },
+            "required": [
+              "type"
+            ]
+          }
+        },
+        "required": [
+          "body"
+        ],
+        "$defs": {
+          "__schema0": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 50
+              },
+              "attrs": {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {}
+              },
+              "content": {
+                "maxItems": 2000,
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/__schema0"
+                }
+              },
+              "marks": {
+                "maxItems": 20,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "maxLength": 50
+                    },
+                    "attrs": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string"
+                      },
+                      "additionalProperties": {}
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                }
+              },
+              "text": {
+                "type": "string",
+                "maxLength": 20000
+              }
+            },
+            "required": [
+              "type"
+            ]
+          }
+        }
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "width": {
+            "default": "normal",
+            "type": "string",
+            "enum": [
+              "narrow",
+              "normal",
+              "wide"
+            ]
+          }
+        }
+      }
+    },
+    "image": {
+      "label": "Image",
+      "description": "A single image with optional caption",
+      "category": "media",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "image": {
+            "assetId": ""
+          }
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "alt": {
+                "type": "string",
+                "maxLength": 300,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "assetId"
+            ]
+          },
+          "caption": {
+            "type": "string",
+            "maxLength": 300,
+            "x-trim": true
+          }
+        },
+        "required": [
+          "image"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "width": {
+            "default": "wide",
+            "type": "string",
+            "enum": [
+              "normal",
+              "wide",
+              "full"
+            ]
+          }
+        }
+      }
+    },
+    "imageText": {
+      "label": "Image + text",
+      "description": "Text beside one or two photos",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Titolo",
+          "image": {
+            "assetId": ""
+          }
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 4000,
+            "x-trim": true
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "alt": {
+                "type": "string",
+                "maxLength": 300,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "assetId"
+            ]
+          },
+          "secondaryImage": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "alt": {
+                "type": "string",
+                "maxLength": 300,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "assetId"
+            ]
+          },
+          "badgeText": {
+            "type": "string",
+            "maxLength": 60,
+            "x-trim": true
+          },
+          "primaryCta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          },
+          "secondaryCta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          }
+        },
+        "required": [
+          "heading",
+          "image"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "imagePosition": {
+            "default": "right",
+            "type": "string",
+            "enum": [
+              "left",
+              "right"
+            ]
+          }
+        }
+      }
+    },
+    "quote": {
+      "label": "Quote / story",
+      "description": "A large quote over a photo, or a personal story",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "quote": "Citazione"
+        },
+        "settings": {
+          "variant": "band"
+        }
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600,
+            "x-trim": true
+          },
+          "quoteAccent": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          },
+          "author": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "role": {
+            "type": "string",
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 1200,
+            "x-trim": true
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "alt": {
+                "type": "string",
+                "maxLength": 300,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "assetId"
+            ]
+          },
+          "imageCaption": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          },
+          "cta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          }
+        },
+        "required": [
+          "quote"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "variant": {
+            "default": "band",
+            "type": "string",
+            "enum": [
+              "band",
+              "story"
+            ]
+          }
+        }
+      }
+    },
+    "cta": {
+      "label": "Call to action",
+      "description": "Highlighted message with one or two buttons",
+      "category": "engagement",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Titolo",
+          "primaryCta": {
+            "label": "Dona ora",
+            "href": "#dona"
+          }
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 800,
+            "x-trim": true
+          },
+          "primaryCta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          },
+          "secondaryCta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "alt": {
+                "type": "string",
+                "maxLength": 300,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "assetId"
+            ]
+          }
+        },
+        "required": [
+          "heading",
+          "primaryCta"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "tone": {
+            "default": "himalaya",
+            "type": "string",
+            "enum": [
+              "sindoor",
+              "himalaya",
+              "marigold",
+              "paper"
+            ]
+          }
+        }
+      }
+    },
+    "gallery": {
+      "label": "Gallery",
+      "description": "Photo grid from an album or hand-picked images",
+      "category": "media",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "source": "album",
+          "images": []
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 400,
+            "x-trim": true
+          },
+          "source": {
+            "default": "images",
+            "type": "string",
+            "enum": [
+              "album",
+              "images"
+            ]
+          },
+          "albumId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "images": {
+            "default": [],
+            "maxItems": 60,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "assetId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 64
+                },
+                "alt": {
+                  "type": "string",
+                  "maxLength": 300,
+                  "x-trim": true
+                },
+                "caption": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "x-trim": true
+                }
+              },
+              "required": [
+                "assetId"
+              ]
+            }
+          },
+          "limit": {
+            "default": 12,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          }
+        }
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "layout": {
+            "default": "masonry",
+            "type": "string",
+            "enum": [
+              "masonry",
+              "grid"
+            ]
+          }
+        }
+      }
+    },
+    "services": {
+      "label": "Projects highlight",
+      "description": "Cards for featured, latest or chosen projects",
+      "category": "collections",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "I nostri progetti"
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 400,
+            "x-trim": true
+          },
+          "source": {
+            "default": "featured",
+            "type": "string",
+            "enum": [
+              "featured",
+              "latest",
+              "manual"
+            ]
+          },
+          "projectIds": {
+            "default": [],
+            "maxItems": 12,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            }
+          },
+          "limit": {
+            "default": 4,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "endCard": {
+            "type": "object",
+            "properties": {
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "x-trim": true
+              },
+              "body": {
+                "type": "string",
+                "maxLength": 400,
+                "x-trim": true
+              },
+              "cta": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80,
+                    "x-trim": true
+                  },
+                  "href": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 500,
+                    "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                    "x-trim": true
+                  }
+                },
+                "required": [
+                  "label",
+                  "href"
+                ]
+              }
+            },
+            "required": [
+              "heading",
+              "cta"
+            ]
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "layout": {
+            "default": "carousel",
+            "type": "string",
+            "enum": [
+              "carousel",
+              "grid"
+            ]
+          }
+        }
+      }
+    },
+    "impactStats": {
+      "label": "Impact numbers",
+      "description": "Animated key figures (families supported, projects…)",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "source": "settings",
+          "items": []
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "heading": {
+            "type": "string",
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "source": {
+            "default": "settings",
+            "type": "string",
+            "enum": [
+              "settings",
+              "custom"
+            ]
+          },
+          "items": {
+            "default": [],
+            "maxItems": 8,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000000000
+                },
+                "suffix": {
+                  "type": "string",
+                  "maxLength": 8,
+                  "x-trim": true
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120,
+                  "x-trim": true
+                },
+                "progress": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              },
+              "required": [
+                "value",
+                "label"
+              ]
+            }
+          }
+        }
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "testimonials": {
+      "label": "Testimonials",
+      "description": "Quotes from donors, volunteers and partners",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "items": [
+            {
+              "quote": "…",
+              "name": "Nome"
+            }
+          ]
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "items": {
+            "minItems": 1,
+            "maxItems": 12,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 600,
+                  "x-trim": true
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80,
+                  "x-trim": true
+                },
+                "role": {
+                  "type": "string",
+                  "maxLength": 120,
+                  "x-trim": true
+                },
+                "image": {
+                  "type": "object",
+                  "properties": {
+                    "assetId": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64
+                    },
+                    "alt": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "x-trim": true
+                    }
+                  },
+                  "required": [
+                    "assetId"
+                  ]
+                }
+              },
+              "required": [
+                "quote",
+                "name"
+              ]
+            }
+          }
+        },
+        "required": [
+          "items"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "description": "Questions and answers (accordion)",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "items": [
+            {
+              "question": "Domanda?",
+              "answer": "Risposta."
+            }
+          ]
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 400,
+            "x-trim": true
+          },
+          "items": {
+            "minItems": 1,
+            "maxItems": 40,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "x-trim": true
+                },
+                "answer": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 3000,
+                  "x-trim": true
+                }
+              },
+              "required": [
+                "question",
+                "answer"
+              ]
+            }
+          }
+        },
+        "required": [
+          "items"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "newsList": {
+      "label": "Latest news",
+      "description": "The most recent news & stories",
+      "category": "collections",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Ultime notizie"
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "limit": {
+            "default": 3,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "categoryId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "showAllLink": {
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "donateCta": {
+      "label": "Donate",
+      "description": "Gift examples, reasons to give and the donation widget",
+      "category": "engagement",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Dona ora"
+        },
+        "settings": {
+          "anchor": "dona"
+        }
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 600,
+            "x-trim": true
+          },
+          "gifts": {
+            "default": [],
+            "maxItems": 4,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 100000
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "x-trim": true
+                },
+                "image": {
+                  "type": "object",
+                  "properties": {
+                    "assetId": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64
+                    },
+                    "alt": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "x-trim": true
+                    }
+                  },
+                  "required": [
+                    "assetId"
+                  ]
+                }
+              },
+              "required": [
+                "amount",
+                "description"
+              ]
+            }
+          },
+          "reasons": {
+            "default": [],
+            "maxItems": 6,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "x-trim": true
+            }
+          },
+          "trustStats": {
+            "default": [],
+            "maxItems": 3,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 20,
+                  "x-trim": true
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 60,
+                  "x-trim": true
+                }
+              },
+              "required": [
+                "value",
+                "label"
+              ]
+            }
+          },
+          "sideImage": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "alt": {
+                "type": "string",
+                "maxLength": 300,
+                "x-trim": true
+              }
+            },
+            "required": [
+              "assetId"
+            ]
+          },
+          "showWidget": {
+            "default": true,
+            "type": "boolean"
+          },
+          "projectId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "team": {
+      "label": "Team",
+      "description": "The people behind the association",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Chi siamo",
+          "members": []
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 400,
+            "x-trim": true
+          },
+          "members": {
+            "default": [],
+            "maxItems": 40,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80,
+                  "x-trim": true
+                },
+                "role": {
+                  "type": "string",
+                  "maxLength": 120,
+                  "x-trim": true
+                },
+                "bio": {
+                  "type": "string",
+                  "maxLength": 600,
+                  "x-trim": true
+                },
+                "image": {
+                  "type": "object",
+                  "properties": {
+                    "assetId": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64
+                    },
+                    "alt": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "x-trim": true
+                    }
+                  },
+                  "required": [
+                    "assetId"
+                  ]
+                }
+              },
+              "required": [
+                "name"
+              ]
+            }
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "partners": {
+      "label": "Partners",
+      "description": "Partner organisations and businesses",
+      "category": "engagement",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Amici e partner",
+          "partners": []
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 800,
+            "x-trim": true
+          },
+          "partners": {
+            "default": [],
+            "maxItems": 40,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120,
+                  "x-trim": true
+                },
+                "url": {
+                  "type": "string",
+                  "maxLength": 500,
+                  "pattern": "^https:\\/\\/",
+                  "x-trim": true
+                },
+                "logo": {
+                  "type": "object",
+                  "properties": {
+                    "assetId": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64
+                    },
+                    "alt": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "x-trim": true
+                    }
+                  },
+                  "required": [
+                    "assetId"
+                  ]
+                }
+              },
+              "required": [
+                "name"
+              ]
+            }
+          },
+          "cta": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "x-trim": true
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^(\\/(?![/\\\\])[^\\s\\\\]*|#[A-Za-z][\\w-]*|https:\\/\\/[^\\s]+|mailto:[^\\s]+|tel:\\+?[\\d\\s()-]+)$",
+                "x-trim": true
+              }
+            },
+            "required": [
+              "label",
+              "href"
+            ]
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "timeline": {
+      "label": "Timeline",
+      "description": "Milestones of the association's journey",
+      "category": "content",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Il nostro cammino",
+          "items": [
+            {
+              "year": "2026",
+              "title": "Oggi"
+            }
+          ]
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "items": {
+            "minItems": 1,
+            "maxItems": 20,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "year": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 12,
+                  "x-trim": true
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 120,
+                  "x-trim": true
+                },
+                "body": {
+                  "type": "string",
+                  "maxLength": 600,
+                  "x-trim": true
+                },
+                "image": {
+                  "type": "object",
+                  "properties": {
+                    "assetId": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64
+                    },
+                    "alt": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "x-trim": true
+                    }
+                  },
+                  "required": [
+                    "assetId"
+                  ]
+                }
+              },
+              "required": [
+                "year",
+                "title"
+              ]
+            }
+          }
+        },
+        "required": [
+          "heading",
+          "items"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "label": "Newsletter sign-up",
+      "description": "Email sign-up box",
+      "category": "engagement",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Resta in contatto"
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 400,
+            "x-trim": true
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 200,
+            "x-trim": true
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "tone": {
+            "default": "himalaya",
+            "type": "string",
+            "enum": [
+              "himalaya",
+              "deep",
+              "paper"
+            ]
+          }
+        }
+      }
+    },
+    "contact": {
+      "label": "Contact",
+      "description": "Contact form, details and map",
+      "category": "engagement",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Contatti"
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 400,
+            "x-trim": true
+          },
+          "showForm": {
+            "default": true,
+            "type": "boolean"
+          },
+          "showDetails": {
+            "default": true,
+            "type": "boolean"
+          },
+          "showMap": {
+            "default": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "reportsList": {
+      "label": "Reports list",
+      "description": "Downloadable annual reports and financial statements",
+      "category": "collections",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Bilanci e rapporti"
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 600,
+            "x-trim": true
+          },
+          "types": {
+            "default": [],
+            "maxItems": 4,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "ANNUAL_REPORT",
+                "FINANCIAL_STATEMENT",
+                "SOCIAL_REPORT",
+                "OTHER"
+              ]
+            }
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "involveForms": {
+      "label": "Get involved forms",
+      "description": "Volunteer, membership and partner sign-up forms",
+      "category": "engagement",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "heading": "Partecipa"
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "kicker": {
+            "type": "string",
+            "maxLength": 80,
+            "x-trim": true
+          },
+          "heading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "x-trim": true
+          },
+          "headingAccent": {
+            "type": "string",
+            "maxLength": 120,
+            "x-trim": true
+          },
+          "lead": {
+            "type": "string",
+            "maxLength": 600,
+            "x-trim": true
+          },
+          "forms": {
+            "default": [
+              "volunteer",
+              "membership",
+              "partner"
+            ],
+            "minItems": 1,
+            "maxItems": 3,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "volunteer",
+                "membership",
+                "partner"
+              ]
+            }
+          }
+        },
+        "required": [
+          "heading"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          }
+        }
+      }
+    },
+    "spacer": {
+      "label": "Spacer / divider",
+      "description": "Vertical space, optionally with a line",
+      "category": "layout",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {},
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {}
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "paper",
+            "type": "string",
+            "enum": [
+              "paper",
+              "cream",
+              "white",
+              "himalaya",
+              "deep"
+            ]
+          },
+          "size": {
+            "default": "md",
+            "type": "string",
+            "enum": [
+              "sm",
+              "md",
+              "lg",
+              "xl"
+            ]
+          },
+          "divider": {
+            "default": false,
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "marquee": {
+      "label": "Scrolling words",
+      "description": "A band of big words that slowly scrolls sideways (visitors can pause it)",
+      "category": "layout",
+      "version": 1,
+      "singleton": false,
+      "hasMigrations": false,
+      "defaults": {
+        "content": {
+          "items": [
+            {
+              "text": "Istruzione"
+            },
+            {
+              "text": "Salute"
+            },
+            {
+              "text": "Casa"
+            },
+            {
+              "text": "Dignità"
+            },
+            {
+              "text": "Comunità"
+            },
+            {
+              "text": "Speranza"
+            }
+          ]
+        },
+        "settings": {}
+      },
+      "content": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "items": {
+            "minItems": 2,
+            "maxItems": 12,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 40,
+                  "x-trim": true
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          }
+        },
+        "required": [
+          "items"
+        ]
+      },
+      "settings": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,40}$",
+            "x-trim": true
+          },
+          "background": {
+            "default": "deep",
+            "type": "string",
+            "enum": [
+              "deep",
+              "himalaya",
+              "paper",
+              "cream"
+            ]
+          },
+          "style": {
+            "default": "alternate",
+            "type": "string",
+            "enum": [
+              "alternate",
+              "solid"
+            ]
+          },
+          "speed": {
+            "default": "normal",
+            "type": "string",
+            "enum": [
+              "slow",
+              "normal",
+              "fast"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

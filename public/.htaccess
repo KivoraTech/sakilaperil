@@ -1,0 +1,78 @@
+# Sakila — Apache / LiteSpeed (cPanel). Front controller + safe defaults for static files.
+# The app itself sets CSP and security headers on every PHP response.
+
+Options -MultiViews -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Always HTTPS (also behind Cloudflare / a proxy that sets X-Forwarded-Proto).
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Never serve dotfiles (.env, .git, .htaccess …) or backup/config leftovers. (.well-known is allowed for SSL.)
+    RewriteRule (^|/)\.(?!well-known/) - [F,L]
+    RewriteRule \.(env|ini|log|sql|sh|bak|swp|dist|lock|md|yml|yaml)$ - [F,L,NC]
+
+    # Handle Authorization / X-XSRF-Token headers (Laravel default).
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # One URL per page: /index.php/it → /it (only for the address the visitor typed, not the internal rewrite).
+    RewriteCond %{THE_REQUEST} \s/+index\.php(?:/|\s|\?) [NC]
+    RewriteRule ^index\.php(?:/(.*))?$ /$1 [L,R=301]
+
+    # Redirect trailing slashes if not a folder.
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send everything else to Laravel.
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Static files never get the headers PHP sets; add the essentials only where missing.
+    Header setifempty X-Content-Type-Options "nosniff"
+    Header setifempty Referrer-Policy "strict-origin-when-cross-origin"
+    Header setifempty X-Frame-Options "SAMEORIGIN"
+    # Same HSTS value as the app sends (SecurityHeaders::HSTS), for static files served over https.
+    Header setifempty Strict-Transport-Security "max-age=31536000" env=HTTPS
+    # Vite build files have a content hash in their name (app-B3j5Joky.css): cache them for a year.
+    # FilesMatch works on both Apache and LiteSpeed (an <If> block is ignored by LiteSpeed).
+    <FilesMatch "[-.][A-Za-z0-9_-]{8}\.(css|js|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    # Icons and the manifest change rarely.
+    <FilesMatch "^(favicon\.ico|apple-touch-icon\.png|icon(-\d+)?\.png|logo\.png|site\.webmanifest)$">
+        Header set Cache-Control "public, max-age=604800"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType application/manifest+json .webmanifest
+    AddType font/woff2 .woff2
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 30 days"
+    ExpiresByType image/x-icon "access plus 30 days"
+    ExpiresByType image/vnd.microsoft.icon "access plus 30 days"
+    # Fallback where mod_headers is off: build assets are the only css/js/woff2 files served from here.
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/javascript application/javascript application/json application/manifest+json image/svg+xml application/xml text/xml text/calendar
+</IfModule>

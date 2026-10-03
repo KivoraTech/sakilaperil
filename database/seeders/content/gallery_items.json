@@ -1,0 +1,90 @@
+[
+    {
+        "id": "cmurzqe7f001hnn1mqfe4vuxm",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6h0002nn1moxr5xwav",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 0,
+        "createdAt": "2026-10-03 06:08:04.970"
+    },
+    {
+        "id": "cmurzqe7f001inn1mi37r8qc6",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6g0001nn1mhruq7kjs",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 1,
+        "createdAt": "2026-10-03 06:08:04.970"
+    },
+    {
+        "id": "cmurzqe7f001jnn1mqyxh6qph",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6l0006nn1mmguzydtt",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 2,
+        "createdAt": "2026-10-03 06:08:04.970"
+    },
+    {
+        "id": "cmurzqe7f001knn1mxdat3rzg",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6m0007nn1mjsk84sxv",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 3,
+        "createdAt": "2026-10-03 06:08:04.970"
+    },
+    {
+        "id": "cmurzqe7f001lnn1mmxjj3n9w",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6n0009nn1m1ydpeyf6",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 4,
+        "createdAt": "2026-10-03 06:08:04.970"
+    },
+    {
+        "id": "cmurzqe7f001mnn1muxndxhgi",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6p000dnn1miyofdsid",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 5,
+        "createdAt": "2026-10-03 06:08:04.970"
+    },
+    {
+        "id": "cmurzqe7f001nnn1ms9uc4r7o",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6o000ann1mj2orezll",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 6,
+        "createdAt": "2026-10-03 06:08:04.970"
+    },
+    {
+        "id": "cmurzqe7f001onn1m10sv4rg7",
+        "albumId": "cmurzqe7e001enn1mtwnkl856",
+        "type": "PHOTO",
+        "mediaAssetId": "cmurzqe6p000cnn1m0b78i0ko",
+        "videoProvider": null,
+        "videoId": null,
+        "caption": null,
+        "position": 7,
+        "createdAt": "2026-10-03 06:08:04.970"
+    }
+]

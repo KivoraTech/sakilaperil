@@ -1,0 +1,30 @@
+[
+    {
+        "id": "cmurzqe9d0043nn1mpfcj4wuo",
+        "key": "header",
+        "name": "Header",
+        "createdAt": "2026-10-03 06:08:05.041",
+        "updatedAt": "2026-10-03 06:08:05.041"
+    },
+    {
+        "id": "cmurzqe9i004bnn1mpmesnq78",
+        "key": "footer-explore",
+        "name": "Footer · Explore",
+        "createdAt": "2026-10-03 06:08:05.046",
+        "updatedAt": "2026-10-03 06:08:05.046"
+    },
+    {
+        "id": "cmurzqe9m004hnn1m6eiduhgi",
+        "key": "footer-help",
+        "name": "Footer · Help us",
+        "createdAt": "2026-10-03 06:08:05.050",
+        "updatedAt": "2026-10-03 06:08:05.050"
+    },
+    {
+        "id": "cmurzqe9o004mnn1mpx9nin0o",
+        "key": "footer-legal",
+        "name": "Footer · Legal",
+        "createdAt": "2026-10-03 06:08:05.052",
+        "updatedAt": "2026-10-03 06:08:05.052"
+    }
+]
